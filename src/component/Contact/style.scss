@@ -1,15 +1,21 @@
 .contact {
     flex-grow: 1;
+    position: absolute;
   }
   
   .contact h1 {
     margin-bottom: 20px;
   }
-  
+  h2{
+    color:aliceblue;
+    margin-left: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
   .contact iframe {
     border: 0;
-    width: 100%;
+    width: 1000px;
     height: 400px;
-    margin-bottom: 15px;
+    margin: 15px 250px;
+    text-align: center;
   }
   
