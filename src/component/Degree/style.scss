@@ -1,6 +1,4 @@
-// .top{
-//     position: absolute;
-// }
+
 h1{
     text-align: center;
     margin-left: 250px;
@@ -10,20 +8,19 @@ text-align: center;
 display: flex;
 flex-direction: row;
 margin-left: 200px;
-height: 300px;
-margin-top: 25px;
+height: 100%;
+margin-top: 50px;
     
 }
 
 img{
     height: 100px;
     width: 100px;
-    margin-top: 25px;
+    margin-top: 150px;
 }
 
 .child1 {
     width: 20%;    
-    justify-content: center;
     height: 200px;
     width: 200px;
     
@@ -33,15 +30,10 @@ img{
     width: 80%;
     color: white;
     height: 450px;
+    float: left;
     text-align: justify;
-    margin-left: 50px;
-    margin-top: 20px;;
+   
 }
-
-span{
-    font-size: 14px;
-    font-weight: bolder;
-}
-li{
-    font-size: 12px;
+p{
+    margin-left: 0;
 }

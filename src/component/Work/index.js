@@ -5,11 +5,10 @@ const Work = () => {
     return (
         <div>
             <div className="works">
-      <h1><u>WORK EXPERIENCE</u></h1>
-      <br />
-      <p><b>Company: Arete IT Services Private Limited</b></p><br />
-      <p><b>Position: WEB DEVELOPER</b></p><br />
-      <p><b><i>Date: Jan 2017 – Nov 2018</i></b></p>
+      <h1>WORK EXPERIENCE</h1>
+      <p>Company: Arete IT Services Private Limited</p><br />
+      <p>Position: WEB DEVELOPER</p><br />
+      <p>Date: Jan 2017 – Nov 2018</p>
       <br />
       <ul>
         <li>Responsible for design layout for websites using <b>HTML5, CSS3, SASS, JavaScript, PHP and jQuery.</b></li>
@@ -28,11 +27,10 @@ const Work = () => {
       </ul>    
     <br />
 
-    <h1><u>PROJECTS</u></h1>
-      <br />
-      <p><b>GATES BUSSINESS SCHOOL</b></p><br />
-      <p><b>Position: Web Developer</b></p><br />
-      <p><b><i>Date: April 2018 – July 2018 </i></b></p>
+    <h1>PROJECTS</h1>
+      <p>GATES BUSSINESS SCHOOL</p><br />
+      <p>Position: Web Developer</p><br />
+      <p>Date: April 2018 – July 2018</p>
       <br />
       <ul>
       <li>Worked as front-end developer, developed reusable web components using technologies like HTML, JavaScript, CSS, SASS and jQuery.</li>
@@ -43,9 +41,9 @@ const Work = () => {
       </ul>
     <br />
 
-    <p><b>MOBILE E - COMMERCE WEBSITE</b></p><br />
-      <p><b>Position: Project Team Lead</b></p><br />
-      <p><b><i>Date: Sept 2019 – Jan 2020 </i></b></p>
+    <p>MOBILE E - COMMERCE WEBSITE</p><br />
+      <p>Position: Project Team Lead</p><br />
+      <p>Date: Sept 2019 – Jan 2020</p>
       <br />
       <ul>
       <li>Developed mobile-friendly frond-end website template for a M-Commerce restaurant business on WordPress using HTML, CSS, JavaScript and PHP.</li>
@@ -58,9 +56,9 @@ const Work = () => {
       </ul>
     <br />
 
-    <p><b>FOOD LOGING APP</b></p><br />
-      <p><b>Position: Project Team Lead</b></p><br />
-      <p><b><i>Date: Jan 2019 – April 2019 </i></b></p>
+    <p>FOOD LOGING APP</p><br />
+      <p>Position: Project Team Lead</p><br />
+      <p>Date: Jan 2019 – April 2019</p>
       <br />
       <ul>
       <li>Delivered Front End application featuring user profile, Camera, calorie intake and expenditure.</li>
@@ -71,9 +69,9 @@ const Work = () => {
       </ul>
       <br />
 
-      <p><b>VLOUNTEERY EXPERIENCE</b></p><br />
-      <p><b>Position: Project Team Lead</b></p><br />
-      <p><b><i>Date: Jan 2019 – April 2019 </i></b></p>
+      <p>VLOUNTEERY EXPERIENCE</p><br />
+      <p>Position: Project Team Lead</p><br />
+      <p>Date: Jan 2019 – April 2019</p>
       <br />
       <ul>
       <li>Member in uOttawa volunteering services – Conducted campus tours and provided housing to 30 students.</li>

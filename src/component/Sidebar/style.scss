@@ -9,24 +9,18 @@
     position: fixed;
     width: 100px;
     height: 100%;
-    //top: 0;
     z-index: 3;
-    //min-height: 500px;
     .logo {
       display: block;
-      height:80px;
-      height: 80px;
+      height:100px;
+      height: 100px;
   
       img {
         display: block;
         margin: 0 0;
         width: 100px;
         height: 100px;
-        // background: transparent;
-  
-        &.sub-logo {
-          width: 50px;
-        }
+        border-radius: 55px 55px;
       }
     }
   
