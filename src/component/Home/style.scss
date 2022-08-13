@@ -1,20 +1,27 @@
+.text-writer{
+  float: right;
+  width: 60%;
+
+}
+
 .Home {
     .text-zone {
       position: absolute;
+      margin: 200px 200px;
       left: 10%;
-      top: 50%;
       transform: translateY(-50%);
       width: 40%;
-      max-height: 90%;
+      height: 100%;
       animation: effect linear 1s;
     }
+    
+
   
     h1 {
       color: #fff;
-      font-size: 56px;
       line-height: 60px;
       margin: 0;
-      font-family: 'Coolvetica';
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 1mm;
 
@@ -23,10 +30,27 @@
         animation-fill-mode: both;
         animation-iteration-count: 1;
         display: inline-block;
+        font-size: 54px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
       }
 
       .a:hover {
         color: #badedd;
+        animation-name: rubberBand;
+      }
+
+      .b{
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        display: inline-block;
+        font-size: 36px;
+        padding: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      .b:hover {
+        color: #6c8faf;
         animation-name: rubberBand;
       }
   
@@ -34,7 +58,7 @@
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
         color: #ffd700;
-        font-size: 18px;
+        font-size: 36px;
         position: absolute;
         margin-top: -40px;
         left: -15px;
@@ -45,7 +69,7 @@
         content: '<h1/>';
         font-family: 'La Belle Aurore', cursive;
         color: #ffd700;
-        font-size: 18px;
+        font-size:36px;
         position: absolute;
         margin-top: 40px;
         margin-left: -15px;
@@ -57,10 +81,10 @@
     h2 {
       color: rgba(239, 232, 232, 0.639);
       margin-top: 20px;
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 300;
+      font-size: 18px;
       font-family: sans-serif;
-      letter-spacing: 3px;
+      // letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
     }
   
