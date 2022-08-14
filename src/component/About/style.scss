@@ -1,49 +1,45 @@
 
-.main {
-    display: flex;
-    flex-direction: row;
-}
+// .Parent {
+//     display: flex;
+//     flex-direction: row;
+// }
 
 .left {
-    width: 60%;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
     color: white;
     justify-content: center;
-}
-
-.right {
-    width: 30%;
-    height: 100vh;
+    margin-left: 200px;
+    
 }
 
 
 h1{
-    color: #e1e5f4c7;
-    font-size: 36px;
+    color:#e1e5f4c7;
+    font-size: 27px;
     margin-left: 200px;
 
 }
 p{
     font-size: 16px;
     color: white;
-    // justify-content: center;
     text-align: justify;
-    margin-left: 200px
+    
 
 }
 .stage-cube-cont {
     width: 50%;
     height: 100%;
     top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
+    padding: 5%;
+    margin-left: 100px;
+    margin-top: 300px;
+    position: fixed;
     overflow: hidden;
+    opacity: 0.6;
   }
   
   .cubespinner {
-    position:sticky;
     animation-name: spincube;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
