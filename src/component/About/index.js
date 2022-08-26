@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useEffect, useState } from 'react';
 import {faAngular, faCss3,faGitAlt,faHtml5,faJsSquare,faReact} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
+//import Loader from 'react-loaders'
 import './style.scss';
 
 const About = () => {
