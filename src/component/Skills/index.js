@@ -3,7 +3,6 @@ import './style.scss';
 
 
 const Skills = () => {
-    console.log('skills');
     return (
         <div className="skills">
             <h1>SKILLS AND TECHNOLOGIES</h1>
