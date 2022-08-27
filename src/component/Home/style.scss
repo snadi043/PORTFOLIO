@@ -14,9 +14,6 @@
       height: 100%;
       animation: effect linear 1s;
     }
-    
-
-  
     h1 {
       color: #fff;
       line-height: 60px;
@@ -24,6 +21,7 @@
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 1mm;
+     }
 
       .a{
         animation-duration: 1s;
@@ -142,7 +140,7 @@
             transform: scale(1, 1);
         }
     }
-    }
+   
     @keyframes change{
         0%{
           background-position: 0 50%;

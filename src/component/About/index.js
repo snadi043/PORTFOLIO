@@ -16,7 +16,6 @@ const About = () => {
   }, [])
 
     return (
-        <>
     <div className="main">
     <h1>SUMMARY</h1>
       <div className="left">
@@ -64,7 +63,6 @@ const About = () => {
             
     </div>
   </div>
-      </>
     )
 }
 

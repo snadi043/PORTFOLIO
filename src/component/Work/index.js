@@ -3,8 +3,7 @@ import './style.scss';
 
 const Work = () => {
     return (
-        <div>
-            <div className="works">
+    <div className="works">
       <h1>WORK EXPERIENCE</h1>
       <p>Company: Arete IT Services Private Limited</p>
       <p>Position: WEB DEVELOPER</p>
@@ -57,15 +56,14 @@ const Work = () => {
       <p>Tools: HTML, CSS, JIRA, Microsoft Visio and Microsoft Office Suite.</p>
       <br />
 
-      <p>VLOUNTEERY EXPERIENCE</p>
+      <p>VOLUNTEERY EXPERIENCE</p>
       <p>Position: Project Team Lead</p>
       <p>Date: Jan 2019 – April 2019</p>
       <p>Member in uOttawa volunteering services – Conducted campus tours and provided housing to 30 students.</p>
       <p>Computer faculty in GEDT Government High School, Vijayawada, A.P - Worked on updating the Education details of 250 students on state government website. </p>
       <p> Volunteered for “TEXAS INSTRUMENTS” – Coordinated the faculty development program and attended seminars.</p>
       <p> Donated Blood twice and Volunteered at Lions Clubs International Foundation.</p>
-          </div>
-        </div>
+    </div>
     );
 }
 

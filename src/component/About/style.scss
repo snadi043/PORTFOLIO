@@ -1,8 +1,8 @@
 
-// .Parent {
-//     display: flex;
-//     flex-direction: row;
-// }
+
+.main{
+  // margin-top: -20px;
+}
 
 .left {
     width: 80%;
@@ -12,14 +12,16 @@
     margin-left: 200px;
     
 }
+h1 {
+  color: #fff;
+  line-height: 60px;
+  margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1mm;
+  text-align: center;
+ }
 
-
-h1{
-    color:#e1e5f4c7;
-    font-size: 27px;
-    margin-left: 200px;
-
-}
 p{
     font-size: 16px;
     color: white;
