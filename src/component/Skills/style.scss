@@ -1,6 +1,7 @@
 .skills {
     flex-grow: 1;
     position: absolute;
+    margin-left: 200px;
   }
 
   h1 {
@@ -22,7 +23,6 @@
     display: grid;
     font-size: 14px;
     grid-template-columns: 1fr 1fr;
-    margin-left: 300px;
     font-weight: 200;
     color: rgba(210, 190, 215, 0.2);
     line-height: 25px;
