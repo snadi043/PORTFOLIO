@@ -3,8 +3,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import {faAngular, faCss3,faGitAlt,faHtml5,faJsSquare,faReact} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import Loader from 'react-loaders'
 import './style.scss';
+import Timeline from '../Timeline';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -41,7 +41,9 @@ const About = () => {
               </div>
             </div>
         </div>
-            <p>• Efficient Web Developer with 2 years of professional experience in Web development technologies and  Agile Software Development Lifecycles with good understanding in client requirements.</p>
+        <Timeline/>
+
+            {/* <p>• Efficient Web Developer with 2 years of professional experience in Web development technologies and  Agile Software Development Lifecycles with good understanding in client requirements.</p>
             <p>• Experience in developing effective User Interfaces using HTML/HTML5, CSS, SASS, Bootstrap, PHP, jQuery, JavaScript, AJAX, JSON, ReactJS and NodeJS.</p>
             <p>• Experience in implementing JavaScript (ES6) features like Object Oriented concepts and arrow functions.</p>
             <p>• Expertise in writing SQL quires, creating database tables and implementing CRUD operations on database servers like Apache Tomcat, Xampp and phpMyAdmin.</p>
@@ -53,7 +55,7 @@ const About = () => {
             <p>• Implemented projects in software development methodologies such as Agile, Scrum and Waterfall. </p>
             <p>• Experience in using Integrated Development Environments (IDE) such as Eclipse, Visual Studio and Sublime Text 3.</p>
             <p>• Experience in working with project tracking tools like JIRA, Freed Camp and Microsoft Visio. </p>
-            <p></p>
+            <p></p> */}
               
               
              
