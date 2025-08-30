@@ -24,7 +24,7 @@ const Home = () => {
                 <span className="a" >D</span>
                 <span className="a">H</span>
                </h1>
-               <h2>| Web Developer | Front End Developer |</h2><br/><br/>
+               <h2>| Full Stack Web Developer | Mobile Developer |</h2><br/><br/>
                 </div>
                
                 <TypeWriterEffect 

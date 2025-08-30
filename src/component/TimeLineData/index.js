@@ -177,6 +177,18 @@ const TimeLineData = [
         },
     },
     {
+        text: 'One of my design, wireframe and userflow patterns sample using Figma',
+        date: 'July 2022',
+        category: {
+            tag: 'Interests',
+            color: '#018f69'
+        },
+        link: {
+                url:'https://www.figma.com/file/BaYkhD0w4x8pP1VYn4xEPh/Fast-Food-A-Food-Delivery-App',
+                text: 'Prototype for restaurant mobile app'
+            }
+    },
+    {
         text: 'Took up new role as Frontend Developer - Aethon Aerial Solutions',
         date: 'Spet 2019 -  Feb 2020',
         category: {

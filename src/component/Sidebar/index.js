@@ -12,16 +12,19 @@ const SideBar = () => {
                 <img src={LOGO} alt="logo"/>
             </Link>
         <nav>
-            <NavLink  to="/" excat="true" 
-            className={({isActive}) => 'list-group-item' + (isActive ?' demo' : '')}>
-                <FontAwesomeIcon 
-                icon={faHome}
-                color="#8fa19c"
-                className='icon'>
-                </FontAwesomeIcon>
-                </NavLink>
+            <NavLink  
+                to="/" 
+                excat="true" 
+                className={({isActive}) => 'list-group-item' + (isActive ?' demo' : '')}>
+                    <FontAwesomeIcon 
+                    icon={faHome}
+                    color="#8fa27c"
+                    className='icon'>
+                    </FontAwesomeIcon>
+            </NavLink>
 
-                 <NavLink  to="/about" 
+            <NavLink  
+                to="/about" 
                 className={({isActive}) => 'about-link' + (isActive ?' demo' : '')}
                 excat="true">
                 <FontAwesomeIcon 
