@@ -34,7 +34,7 @@ const SideBar = () => {
                 </FontAwesomeIcon>
                 </NavLink>
 
-                <NavLink  to="/skills" className="skill-link" excat activeClassName='active'>
+                <NavLink  to="/skills" className="skill-link" excat='true' activeclassname='active'>
                 <FontAwesomeIcon 
                 icon={faCog}
                 color="#8fa27c"
@@ -42,7 +42,7 @@ const SideBar = () => {
                 </FontAwesomeIcon>
                 </NavLink>
 
-                <NavLink  to="/degree" className="study-link" excat activeClassName='active'>
+                <NavLink  to="/degree" className="study-link" excat='true' activeclassname='active'>
                 <FontAwesomeIcon 
                 icon={faBank}
                 color="#8fa27c"
@@ -50,7 +50,7 @@ const SideBar = () => {
                 </FontAwesomeIcon>
                 </NavLink>
 
-                <NavLink  to="/work" className="work-link" excat activeClassName='active'>
+                <NavLink  to="/work" className="work-link" excat='true' activeclassname='active'>
                 <FontAwesomeIcon 
                 icon={faLaptopCode}
                 color="#8fa27c"
@@ -58,7 +58,7 @@ const SideBar = () => {
                 </FontAwesomeIcon>
                 </NavLink>
 
-                <NavLink  to="/contact" className="contact-link" excat activeClassName='active'>
+                <NavLink  to="/contact" className="contact-link" excat='true' activeclassname='active'>
                 <FontAwesomeIcon 
                 icon={faEnvelope}
                 color="#8fa27c"
