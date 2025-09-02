@@ -1,0 +1,186 @@
+.text-writer{
+  float: right;
+  width: 60%;
+
+}
+
+.Home {
+    .text-zone {
+      position: absolute;
+      margin: 200px 200px;
+      left: 10%;
+      transform: translateY(-50%);
+      width: 40%;
+      height: 100%;
+      animation: effect linear 1s;
+    }
+    h1 {
+      color: #fff;
+      line-height: 60px;
+      margin: 0;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 1mm;
+     }
+
+      .a{
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        display: inline-block;
+        font-size: 54px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      }
+
+      .a:hover {
+        color: #badedd;
+        animation-name: rubberBand;
+      }
+
+      .b{
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        display: inline-block;
+        font-size: 36px;
+        padding: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      .b:hover {
+        color: #6c8faf;
+        animation-name: rubberBand;
+      }
+  
+      &:before {
+        // content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 36px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        // content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size:36px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: -15px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+    }
+  
+    h2 {
+      color: rgba(239, 232, 232, 0.639);
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 18px;
+      font-family: sans-serif;
+      // letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  
+    .flat-button {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 15px 18px;
+      border: 1px solid #e6e3d3;
+      margin-top: 30px;
+      float: left;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+  
+      &:hover {
+        background: hsla(320, 1%, 48%, 0.641);
+        color: rgb(233, 220, 220);
+      }
+      button{
+        background: none;
+        border: none;
+        color: #e6e3d3;
+      }
+    }
+ 
+    #text {
+        position: relative;
+        margin-top: 100px;
+        text-align: center;
+        padding: 10px;
+        color: linear-gradient(-45deg, #7c5f48, #8c4660, #69838e, #95b1a9);
+        animation: change 10s ease-in-out infinite;
+        
+        hover {
+            animation: effect linear 1s;
+
+    }
+    } 
+    
+ 
+    @keyframes effect {
+        0% {
+            transform: scale(1, 1);
+        }
+        25% {
+            transform: scale(1.3, 0.6);
+        }
+ 
+        50% {
+            transform: scale(1.1, 0.9);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+   
+    @keyframes change{
+        0%{
+          background-position: 0 50%;
+        }
+        50%{
+          background-position: 100% 50%;
+        }
+        100%{
+          background-position: 0 50%;
+        }
+  }
+  
+  
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  } 
+  

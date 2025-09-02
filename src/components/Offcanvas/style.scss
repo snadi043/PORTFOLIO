@@ -1,0 +1,146 @@
+.icon{
+  width: 35px;
+  height: 35px;
+  
+}
+
+.nav-bar {
+    background: transparent;
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    z-index: 3;
+    .logo {
+      display: block;
+      height:100px;
+      height: 100px;
+  
+      img {
+        display: block;
+        margin: 0 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 55px 55px;
+      }
+    }
+  
+    nav {
+      display: block;
+      text-align: center;
+      position: absolute;
+      height: 100%;
+      margin-top: 120px;
+      width: 100%;
+  
+      a {
+        font-size: 22px;
+        color: #4d4d4e;
+        display: block;
+        line-height: 51px;
+        height: 51px;
+        position: relative;
+        text-decoration: none;
+  
+        i {
+          transition: all 0.3s ease-out;
+        }
+  
+        &:hover {
+          color: hsl(0, 22%, 87%);
+
+  
+          svg {
+            opacity: 0;
+          }
+  
+          &:after {
+            opacity: 1;
+          }
+        }
+  
+        &:after {
+          content: '';
+          font-size: 24px;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 0;
+          display: inline-flex;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-out;
+          transition: all 0.2s ease-out;
+        }
+  
+        &:first-child {
+          &:after {
+            content: 'HOME';
+          }
+        }
+      }
+  
+      a.about-link {
+        &:after {
+          content: 'ABOUT';
+        }
+      }
+  
+      a.skill-link {
+        &:after {
+          content: 'SKILLS';
+        }
+      }
+  
+      a.study-link {
+        &:after {
+          content: 'DEGREE';
+        }
+      }
+
+      a.work-link {
+        &:after {
+          content: 'WORK';
+        }
+      }
+
+      a.contact-link {
+        &:after {
+          content: 'CONTACT';
+        }
+      }
+
+     
+  
+      a.active {
+        svg {
+          color: #69838e;
+        }
+      }
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      display: block;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin-top: 550px;
+  
+      li {
+        a {
+          padding: 7px 0;
+          display: block;
+          font-size: 15px;
+          line-height: 16px;
+          color:#5da573ac;
+  
+          &:hover {
+            color: #51a461;
+          }
+
+        }
+      }
+    }
+  }
+  

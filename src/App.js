@@ -1,19 +1,20 @@
-import { Routes, Route} from "react-router-dom";
-import Home from './component/Home';
-import About from './component/About';
-import Skills from './component/Skills';
-import Work from './component/Work';
-import Contact from './component/Contact';
-import SideBar from "./component/Sidebar";
-import Degree from "./component/Degree";
-import './App.scss';
+// import { Routes, Route} from "react-router-dom";
+// import Home from './components/Home';
+// import About from './component/About';
+// import Skills from './component/Skills';
+// import Work from './component/Work';
+// import Contact from './component/Contact';
+import Offcanvas from "./components/Offcanvas";
+// import Degree from "./component/Degree";
+// import './App.scss';
 
 
 const App = () => {
   return (
   <div className="App">
-    <div>
-      <SideBar/>
+      <Offcanvas/>
+      {/* <Home/> */}
+    {/* <div>
       <div className="page">
       </div>
       <Routes>
@@ -24,7 +25,7 @@ const App = () => {
           <Route path="/work"  element={<Work />} />
           <Route path="/contact" element={<Contact />}  />
       </Routes>
-    </div>
+    </div> */}
     </div>
   );
 }
