@@ -4,11 +4,12 @@ const Button = (props) => {
     return (
         <button
             className={props.className}
-            type={props.type}
+            type="button"
             height={props.height}
             width={props.width}
             style={props.style}
-            >
+            onClick={props.onClick}
+            {...props}>
             {props.children}
         </button>
     );
