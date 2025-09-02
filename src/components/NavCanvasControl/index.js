@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Profile from '../Profile';
 import Button from '../../Utilities/Button';
 import Icon from '../../Utilities/Icon';
 
@@ -26,19 +27,17 @@ const NavCanvasControl = (props) => {
                 data-bs-scroll="true" 
                 tabindex="-1" 
                 id="offcanvasWithBothOptions" 
-                aria-labelledby="offcanvasWithBothOptionsLabel">
+                aria-labelledby="offcanvasWithBothOptionsLabel"
+                style={{backgroundColor:"#272829"}}>
             <div className="offcanvas-header"                     
                 id="offcanvasCollapse">
-                {/* <ProfilePicture>
-
-                </ProfilePicture> */}
                     <Button
-                        className="btn-close" 
-                        type="button" 
+                        className="btn-close btn-close-black" 
                         data-bs-dismiss="offcanvas" 
                         aria-label="Close">
                     </Button>
             </div>
+                <Profile/>
             <div className="offcanvas-body">
                 {props.children}
             </div>
