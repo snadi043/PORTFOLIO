@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Profile from '../Profile';
+import Profile from '../Profile/ProfileDetails';
 import Button from '../../Utilities/Button';
 import Icon from '../../Utilities/Icon';
 import './style.scss';
