@@ -5,18 +5,18 @@ import Text from '../../Utilities/Text';
 const NavButton = (props) => {
     return(
         <div className="container">
-            <nav className="navbar navbar-expand-md bg-body-tertiary">
-                <div className="container-fluid">
+            <nav className="navbar">
+                <div className="container-fluid align-items-start align-content-center flex-wrap">
                     <a className="navbar-brand" href={props.href}>
                         <Icon 
                             width={30} 
                             height={30} 
-                            fillColor="#000000" 
+                            fill="#a8a9b4" 
                             className={props.className}
                             viewBox="0 0 16 16">
                             <path d={props.path}></path>
                         </Icon>
-                        <Text>
+                        <Text style={{color:'#a8a9b4'}}>
                             {props.children}
                         </Text>
                     </a>

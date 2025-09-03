@@ -28,17 +28,19 @@ const NavCanvasControl = (props) => {
                 tabindex="-1" 
                 id="offcanvasWithBothOptions" 
                 aria-labelledby="offcanvasWithBothOptionsLabel"
-                style={{backgroundColor:"#272829"}}>
-            <div className="offcanvas-header"                     
+                style={{backgroundColor:'#040b14'}}>
+            <div 
+                className="offcanvas-header"                     
                 id="offcanvasCollapse">
                     <Button
                         className="btn-close btn-close-black" 
                         data-bs-dismiss="offcanvas" 
-                        aria-label="Close">
+                        aria-label="Close"
+                        style={{backgroundColor:'#a8a9b4'}}>
                     </Button>
             </div>
                 <Profile/>
-            <div className="offcanvas-body">
+            <div class="d-flex flex-column mb-3 justify-content-center align-items-center align-content-center flex-wrap">
                 {props.children}
             </div>
             </div>
