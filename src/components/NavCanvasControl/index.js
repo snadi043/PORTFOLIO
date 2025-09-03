@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Profile from '../Profile';
 import Button from '../../Utilities/Button';
 import Icon from '../../Utilities/Icon';
+import './style.scss';
 
 const NavCanvasControl = (props) => {
     return(
@@ -28,7 +29,7 @@ const NavCanvasControl = (props) => {
                 tabindex="-1" 
                 id="offcanvasWithBothOptions" 
                 aria-labelledby="offcanvasWithBothOptionsLabel"
-                style={{backgroundColor:'#040b14'}}>
+                style={{backgroundColor:'#040b14', width: '300px'}}>
             <div 
                 className="offcanvas-header"                     
                 id="offcanvasCollapse">
@@ -40,7 +41,7 @@ const NavCanvasControl = (props) => {
                     </Button>
             </div>
                 <Profile/>
-            <div class="d-flex flex-column mb-3 justify-content-center align-items-center align-content-center flex-wrap">
+            <div class="container">
                 {props.children}
             </div>
             </div>
