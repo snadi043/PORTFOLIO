@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import Text from '../Text';
+import './style.scss';
 
 const TypeWritterComponent = () => {
     return(
@@ -9,9 +10,10 @@ const TypeWritterComponent = () => {
                 justifyContent: 'center', 
                 alignItems: 'center',
                 }}>
-                <Text> I am a </Text>
-            <div className='container'>
+                <Text style={{textAlign:'end'}}> I am a </Text>
+            <div className='container align-self-baseline'>
                 <Typewriter
+                className='typewriter'
                 onInit={(typewriter) => {
                     typewriter.typeString('')
                     .callFunction(() => {

@@ -7,16 +7,18 @@ import HomeComponent from './components/HomeComponent';
 import { Fragment } from "react";
 import Offcanvas from "./Utilities/Offcanvas";
 // import Degree from "./component/Degree";
-// import './App.scss';
+import './App.scss';
+import { createPortal } from 'react-dom';
 
+const OffcanvasPortalElement = document.getElementById('offcanvas-root');
 
 const App = () => {
   return (
   <Fragment>
-    <div className="container-fluid">
-      <Offcanvas/>
-        <div>
+    <div className="container-fluid app">
+      {createPortal(<Offcanvas/>, OffcanvasPortalElement)}
         <HomeComponent/>
+        <div>
           <p>
                   height={25}
                   width={25}

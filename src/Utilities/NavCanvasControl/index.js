@@ -8,8 +8,8 @@ const NavCanvasControl = (props) => {
     return(
         <Fragment>
             <Button
-                className="btn"
-                style={{backgroundColor:'#149ddd'}}
+                className="btn "
+                style={{backgroundColor:'#149ddd', zIndex:'1', position:'fixed', top:'10px', left:'10px'}}
                 height={30}
                 width={30}
                 data-bs-toggle="offcanvas" 
@@ -41,7 +41,7 @@ const NavCanvasControl = (props) => {
                     </Button>
             </div>
                 <Profile/>
-            <div class="container">
+            <div className="container">
                 {props.children}
             </div>
             </div>

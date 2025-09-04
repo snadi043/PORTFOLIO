@@ -1,16 +1,16 @@
-import React from 'react'
+import React, {StrictMode} from 'react'
 import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from 'react-router-dom'
+// import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.scss'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
+  <StrictMode>
+    {/* <BrowserRouter> */}
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    {/* </BrowserRouter> */}
+  </StrictMode>,
   document.getElementById('root')
 )
 
