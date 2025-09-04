@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import Profile from '../Profile/ProfileDetails';
-import Button from '../../Utilities/Button';
-import Icon from '../../Utilities/Icon';
+import Profile from '../../components/Profile/ProfileDetails';
+import Button from '../Button';
+import Icon from '../Icon';
 import './style.scss';
 
 const NavCanvasControl = (props) => {

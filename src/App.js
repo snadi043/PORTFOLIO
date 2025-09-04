@@ -1,11 +1,11 @@
 // import { Routes, Route} from "react-router-dom";
-// import Home from './components/Home';
+import HomeComponent from './components/HomeComponent';
 // import About from './component/About';
 // import Skills from './component/Skills';
 // import Work from './component/Work';
 // import Contact from './component/Contact';
 import { Fragment } from "react";
-import Offcanvas from "./components/Offcanvas";
+import Offcanvas from "./Utilities/Offcanvas";
 // import Degree from "./component/Degree";
 // import './App.scss';
 
@@ -16,6 +16,7 @@ const App = () => {
     <div className="container-fluid">
       <Offcanvas/>
         <div>
+        <HomeComponent/>
           <p>
                   height={25}
                   width={25}

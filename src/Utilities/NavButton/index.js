@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../../Utilities/Icon";
-import Text from '../../Utilities/Text';
+import Icon from "../Icon";
+import Text from '../Text';
 
 const NavButton = (props) => {
     return(

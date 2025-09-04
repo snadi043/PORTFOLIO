@@ -8,6 +8,7 @@ const Image = (props) => {
             style={props.style}
             height={props.height}
             width={props.width}
+            className={props.className}
         />
     );
 }
