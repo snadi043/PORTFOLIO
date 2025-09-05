@@ -6,6 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.scss';
 import Timeline from '../Timeline';
 
+import Text from '../../Utilities/Text';
+import FilledBox from '../../Utilities/FilledBox';
+import Image from '../../Utilities/Image';
+import Icon from '../../Utilities/Icon';
+
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -16,56 +21,31 @@ const About = () => {
   }, [])
 
     return (
-    <div className="main">
-    <h1>SUMMARY</h1>
-      <div className="left">
-          <div className="stage-cube-cont">
-            <div className="cubespinner">
-              <div className="face1">
-                <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-              </div>
-              <div className="face2">
-                <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-              </div>
-              <div className="face3">
-                <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-              </div>
-              <div className="face4">
-                <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-              </div>
-              <div className="face5">
-                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-              </div>
-              <div className="face6">
-                <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-              </div>
-            </div>
+    <div className="container-fluid about-page">
+      <div className="container-about-page-intro">
+        <Text style={{}}
+              className="fs-1 text">
+              About
+        <FilledBox style={{height:'2px', width: '20px', paddingTop: '10px', backgroundColor:"#149ddd", margin: '0'}} />
+        </Text>
+        <Text>
+          Full Stack Developer, 4+ years of software development experience with diverse skill set spanning mobile and web development, UI/UX design, and backend services. Experienced in working with a range of technologies such as React, Angular, Node.js, AWS, Docker, SQL, MongoDB and Flutter. Strong background in implementing scalable, reusable components and efficient development workflows. Passionate about optimizing user experiences and delivering high-performance, cloud-based applications. Proven ability to work collaboratively in agile teams and contribute to end-to-end development, from design to deployment.
+        </Text>
+      </div>
+      <div className="container about-page-profile">
+        <div className="container about-page-image">
+          <Image></Image>
         </div>
-        <Timeline/>
-
-            {/* <p>• Efficient Web Developer with 2 years of professional experience in Web development technologies and  Agile Software Development Lifecycles with good understanding in client requirements.</p>
-            <p>• Experience in developing effective User Interfaces using HTML/HTML5, CSS, SASS, Bootstrap, PHP, jQuery, JavaScript, AJAX, JSON, ReactJS and NodeJS.</p>
-            <p>• Experience in implementing JavaScript (ES6) features like Object Oriented concepts and arrow functions.</p>
-            <p>• Expertise in writing SQL quires, creating database tables and implementing CRUD operations on database servers like Apache Tomcat, Xampp and phpMyAdmin.</p>
-            <p>• Experienced in designing websites with CMS (Content Management System) tools like WordPress.</p>
-            <p>• Good understanding of NOSQL databases like MongoDB.</p>
-            <p>• Experience in using distributed version control tools like Git and GitHub for maintaining versions of source code. </p>
-            <p>• Experience in Docker containerization and customization of Docker images. </p>
-            <p>• Experience in building Continuous Integration (CI) /Continuous Deployment (CD) pipelines for application requirements using Jenkins. </p>
-            <p>• Implemented projects in software development methodologies such as Agile, Scrum and Waterfall. </p>
-            <p>• Experience in using Integrated Development Environments (IDE) such as Eclipse, Visual Studio and Sublime Text 3.</p>
-            <p>• Experience in working with project tracking tools like JIRA, Freed Camp and Microsoft Visio. </p>
-            <p></p> */}
-              
-              
-             
-             
-
-
-            
+        <div className='container about-page-personal-details'>
+          <Text>Personal Details</Text>
+        </div>
+      </div>
+      <div className='container about-page-analytics'>
+        <Icon></Icon>
+        <Text></Text>
+      </div>
     </div>
-  </div>
-    )
+    );
 }
 
 export default About;

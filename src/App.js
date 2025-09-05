@@ -1,6 +1,6 @@
 // import { Routes, Route} from "react-router-dom";
 import HomeComponent from './components/HomeComponent';
-// import About from './component/About';
+import About from './components/About';
 // import Skills from './component/Skills';
 // import Work from './component/Work';
 // import Contact from './component/Contact';
@@ -15,10 +15,21 @@ const OffcanvasPortalElement = document.getElementById('offcanvas-root');
 const App = () => {
   return (
   <Fragment>
-    <div className="container-fluid app">
+    <div className="container-fluid app-offcanvasPortal">
       {createPortal(<Offcanvas/>, OffcanvasPortalElement)}
+    </div>
+    <div className='container-fluid app-main'>
         <HomeComponent/>
-        <div>
+        <About/>
+    </div>
+  </Fragment>
+  );
+}
+
+export default App;
+
+
+        {/* <div>
           <p>
                   height={25}
                   width={25}
@@ -86,10 +97,4 @@ const App = () => {
 
 
           </p>
-        </div>
-    </div>
-  </Fragment>
-  );
-}
-
-export default App;
+        </div> */}
