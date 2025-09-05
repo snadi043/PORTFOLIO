@@ -22,25 +22,25 @@ const About = () => {
 
     return (
     <div className="container-fluid about-page">
-      <div className="container-about-page-intro">
+      <div className="container-fluid about-page-intro">
         <Text style={{}}
               className="fs-1 text">
               About
         <FilledBox style={{height:'2px', width: '20px', paddingTop: '10px', backgroundColor:"#149ddd", margin: '0'}} />
         </Text>
-        <Text>
+        <Text className="fs-4 text">
           Full Stack Developer, 4+ years of software development experience with diverse skill set spanning mobile and web development, UI/UX design, and backend services. Experienced in working with a range of technologies such as React, Angular, Node.js, AWS, Docker, SQL, MongoDB and Flutter. Strong background in implementing scalable, reusable components and efficient development workflows. Passionate about optimizing user experiences and delivering high-performance, cloud-based applications. Proven ability to work collaboratively in agile teams and contribute to end-to-end development, from design to deployment.
         </Text>
       </div>
-      <div className="container about-page-profile">
+      <div className="container-fluid about-page-profile">
         <div className="container about-page-image">
           <Image></Image>
         </div>
-        <div className='container about-page-personal-details'>
-          <Text>Personal Details</Text>
+        <div className='container-fluid about-page-personal-details'>
+          <Text className="fs-1 text">Personal Details</Text>
         </div>
       </div>
-      <div className='container about-page-analytics'>
+      <div className='container-fluid about-page-analytics'>
         <Icon></Icon>
         <Text></Text>
       </div>

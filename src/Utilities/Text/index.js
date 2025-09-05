@@ -2,7 +2,7 @@ import React from 'react';
 
 const Text = (props) => {
     return(
-        <div className='container'>
+        <div className='container-fluid'>
             <p
                 style={props.style}
                 className={props.className}

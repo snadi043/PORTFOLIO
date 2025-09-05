@@ -4,14 +4,14 @@ import './style.scss';
 
 const TypeWritterComponent = () => {
     return(
-        <div className='container' 
+        <div className='container-fluid' 
             style={{
                 display: 'flex', 
                 justifyContent: 'center', 
                 alignItems: 'center',
                 }}>
                 <Text style={{textAlign:'end'}}> I am a </Text>
-            <div className='container align-self-baseline'>
+            <div className='container-fluid align-self-baseline'>
                 <Typewriter
                 className='typewriter'
                 onInit={(typewriter) => {
