@@ -1,15 +1,13 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useEffect, useState } from 'react';
-import {faAngular, faCss3,faGitAlt,faHtml5,faJsSquare,faReact} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.scss';
-import Timeline from '../Timeline';
+
+import ProfileAnalytics from '../Profile/ProfileAnalytics';
 
 import Text from '../../Utilities/Text';
 import FilledBox from '../../Utilities/FilledBox';
 import Image from '../../Utilities/Image';
-import Icon from '../../Utilities/Icon';
+
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,23 +27,43 @@ const About = () => {
         <FilledBox style={{height:'2px', width: '20px', paddingTop: '10px', backgroundColor:"#149ddd", margin: '0'}} />
         </Text>
         <Text className="fs-4 text">
-          Full Stack Developer, 4+ years of software development experience with diverse skill set spanning mobile and web development, UI/UX design, and backend services. Experienced in working with a range of technologies such as React, Angular, Node.js, AWS, Docker, SQL, MongoDB and Flutter. Strong background in implementing scalable, reusable components and efficient development workflows. Passionate about optimizing user experiences and delivering high-performance, cloud-based applications. Proven ability to work collaboratively in agile teams and contribute to end-to-end development, from design to deployment.
+          Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
+          Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
+          Coffee Lover.
         </Text>
       </div>
-      <div className="container-fluid about-page-profile">
-        <div className="container about-page-image">
-          <Image></Image>
+      <div className="container-fluid about-page-profile" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', marginTop: '50px'}}>
+        <div className="container-fluid about-page-image" style={{height: 'fit-content', width:'fit-content'}}>
+          <Image
+            src="https://avatars.githubusercontent.com/u/60456049?v=4"
+            alt="about_page_profile_image" 
+            style={{}}
+            height={350}
+            width={350}
+            className=""></Image>
         </div>
         <div className='container-fluid about-page-personal-details'>
-          <Text className="fs-1 text">Personal Details</Text>
+          <Text className="fs-2 text">Fullstack & Mobile Developer</Text>
+          <Text className="fs-5 text">
+            Looking for new opportunities to leverage my skills and contribute to exciting projects.
+          </Text>
+          <div className='container-fluid md-2 p-2'>
+            <Text>Website</Text>
+            <Text>City</Text>
+            <Text>Phone</Text>
+            <Text>Email</Text>
+            <Text>Degree</Text>
+            <Text>Freelance</Text>
+          </div>
         </div>
       </div>
-      <div className='container-fluid about-page-analytics'>
-        <Icon></Icon>
-        <Text></Text>
+      <div className='container-fluid about-page-analytics' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>
+        <ProfileAnalytics/>
       </div>
     </div>
     );
 }
 
 export default About;
+
+
