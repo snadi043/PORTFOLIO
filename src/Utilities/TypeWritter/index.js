@@ -6,11 +6,13 @@ const TypeWritterComponent = () => {
     return(
         <div className='container-fluid' 
             style={{
+                position: 'absolute',
                 display: 'flex', 
                 justifyContent: 'center', 
                 alignItems: 'center',
+                margin: '425px -325px',
                 }}>
-                <Text style={{textAlign:'end'}}> I am a </Text>
+                <Text style={{textAlign:'end'}}> I am a</Text>
             <div className='container-fluid align-self-baseline'>
                 <Typewriter
                 className='typewriter'

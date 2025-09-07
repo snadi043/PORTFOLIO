@@ -11,16 +11,19 @@ const HomeComponent = () => {
                 backgroundSize: 'cover',
                 height:'100vh'}}>
                 <Text style={{
-                    color: '#242020ff', 
-                    fontSize: '48px', 
+                    position: 'absolute',
+                    color: '#ffffff', 
+                    fontSize: '64px', 
                     fontFamily: 'Arial, sans-serif',
-                    fontWeight: '600',
-                    display: 'flex', 
-                    textAlign: 'center'
-                }}>
-                SAI HARNADH
-            <TypeWritterComponent />
-            </Text>
+                    fontWeight: 'bolder',
+                    textAlign: 'center',
+                    justifyContent: 'center',
+                    margin: '350px 150px',
+                    alignContent: 'center'
+                    }}>
+                        SAI HARNADH
+                </Text>
+                <TypeWritterComponent />
         </div>
     );
 };
