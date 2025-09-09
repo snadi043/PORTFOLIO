@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useEffect, useState } from 'react';
 import './style.scss';
 
 import ProfileAnalytics from '../Profile/ProfileAnalytics';
@@ -10,14 +9,6 @@ import Image from '../../Utilities/Image';
 
 
 const About = () => {
-  //   const [letterClass, setLetterClass] = useState('text-animate')
-
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 3000)
-  // }, [])
-
     return (
     <div className="container-fluid about-page">
       <div className="container-fluid about-page-intro">
@@ -44,12 +35,12 @@ const About = () => {
             Looking for new opportunities to leverage my skills and contribute to exciting projects.
           </Text>
           <div className='container-fluid md-2 p-2' style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: '10px', columnGap: '50px', marginTop: '20px', fontWeight: 'bold'}}>
-            <Text>Website</Text>
-            <Text>City</Text>
-            <Text>Phone</Text>
-            <Text>Email</Text>
-            <Text>Degree</Text>
-            <Text>Freelance</Text>
+            <Text>Website:</Text>
+            <Text>City:</Text>
+            <Text>Phone:</Text>
+            <Text>Email:</Text>
+            <Text>Degree:</Text>
+            <Text>Freelance:</Text>
           </div>
         </div>
       </div>

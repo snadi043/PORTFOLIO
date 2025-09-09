@@ -1,87 +1,32 @@
 import React from 'react';
+import UnderlinedText from '../../Utilities/UnderlinedText';
+import Text from '../../Utilities/Text';
+import Progressbar from '../../Utilities/Progressbar';
 import './style.scss';
-
 
 const Skills = () => {
     return (
-        <div className="skills">
-            <h1>SKILLS AND TECHNOLOGIES</h1>
-            <br/>
-            <div className="content">
-                <div>
-                    <strong>Front End Technologies</strong>
-                    <li>HTML</li>
-                    <li>CSS, SCSS, SASS</li>
-                     <li>AJAX, JSON, JQUERY</li>
-                     <li>Bootstrap, MaterialUI, StoryBooks</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Back End Technologies</strong>
-                    <li>PHP</li>
-                    <li>Node.js</li>
-                    <li>C#, ASP.NET</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Frameworks & Libraries</strong>
-                    <li>Angular</li>
-                    <li>React.js</li>
-                    <li>Redux</li> 
-                    <li>React Native</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Databases</strong>
-                    <li>MongoDB</li>
-                    <li>SSMS</li>
-                    <li>PostgreSQL</li>  
-                    <li>DynamoDB</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>UI/UX & IDE</strong>
-                    <li>Figma</li>
-                    <li>Sketch</li>
-                    <li>Visual Studio</li>
-                    <li>Visual Studio Code</li>  
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Platforms</strong>
-                    <li>Windows</li>
-                    <li>Mac</li>
-                    <li>Linux</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Cloud Technologies</strong>
-                    <li>AZURE, AWS</li>
-                    <li>Docker</li>
-                    <li>Azure Pipelines, Azure Repos</li>
-                    <li>Git, GitHub</li>   
-                    <li>Jenkins</li>
-                </div>
-                <br/>
-                <br/>
-                <div>
-                    <strong>Testing</strong>
-                    <li>Unit Testing</li>
-                    <li>Karma</li>
-                    <li>Jasmine</li>
-                    <li>Cypress</li>   
-                </div>
-                <br/>
-                <br/>
+        <div className="container-fluid about-page-intro">
+            <UnderlinedText headerText="Skills & Technologies"/>
+            <Text className="fs-4 text">
+            Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
+            Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
+            Coffee Lover.
+            </Text>
+            <div className='container-fluid md-2 p-2' style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: '10px', columnGap: '50px', marginTop: '20px', fontWeight: 'bold'}}>
+            <div className='container -fluid md-2 p-2' style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: '5px', columnGap: '5px', marginTop: '20px'}}>
+                <Text>Frontend</Text> 
+                <Progressbar/>
+                <Progressbar/>
+
             </div>
-            
-        </div>
+            <Text>Backend</Text>
+            <Text>Databases</Text>
+            <Text>Frameworks</Text>
+            <Text>Environments</Text>
+            <Text>Cloud</Text>
+          </div>
+      </div>
     );
 };
 
