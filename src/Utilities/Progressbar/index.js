@@ -4,20 +4,23 @@ import Text from "../Text";
 
 const Progressbar = (props) => {
     return(
-        <div className="progress-stacked">
-            <div className="progress progressbar bg-info" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style={{width: '55%'}}>
-                <Tooltip tooltipTitle="95%">
-                    <Text>HTML</Text>
+        <div className="progress-stacked" style={{display:'flex', height: 'inherit', alignItems: 'center'}}>
+            <div className="progress progressbar bg-info" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" width={props.progressWidth1}
+                style={{borderRadius: '0', height:'auto', justifyContent: 'space-evenly'}}>
+                <Tooltip tooltipTitle={props.skillPercentage1}>
+                    <Text>{props.skillLabel1}</Text>
                 </Tooltip>
             </div>
-            <div className="progress progressbar bg-success" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style={{width: '55%'}}>
-                <Tooltip tooltipTitle="95%">
-                    <Text>CSS</Text>
+            <div className="progress progressbar bg-success" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" width={props.progressWidth2}
+                style={{borderRadius: '0', height:'auto', justifyContent: 'space-evenly'}}>
+                <Tooltip tooltipTitle={props.skillPercentage2}>
+                    <Text>{props.skillLabel2}</Text>
                 </Tooltip>
             </div>
-            <div className="progress progressbar bg-danger" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style={{width: '55%'}}>
-                <Tooltip tooltipTitle="85%">
-                   <Text>JS</Text>
+            <div className="progress progressbar bg-danger" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" width={props.progressWidth3}
+                style={{borderRadius: '0', height:'auto', justifyContent: 'space-evenly'}}>
+                <Tooltip tooltipTitle={props.skillPercentage3}>
+                   <Text>{props.skillLabel3}</Text>
                 </Tooltip>
             </div>
         </div> 
@@ -25,20 +28,3 @@ const Progressbar = (props) => {
 }
 
 export default Progressbar;
-
-
-
-        // {...props.forEach(() => (
-    //         <div className="progress progressbar `{{$props.backgroundColor}}`" 
-    //             role="progressbar" 
-    //             aria-label="Segment one" 
-    //             aria-valuenow="15" 
-    //             aria-valuemin="0" 
-    //             aria-valuemax="100" 
-    //             style={{width: '55%'}}>
-    //             <Tooltip tooltipTitle={props.skillPercentage}>
-    //                 <Text>{props.skillTitle}</Text>
-    //             </Tooltip>
-    //         </div>
-    //     )
-    // )}

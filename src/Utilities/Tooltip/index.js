@@ -21,7 +21,7 @@ const Tooltip = (props) => {
             data-bs-custom-class="custom-tooltip"
             data-bs-title={props.tooltipTitle}
             className={props.className}
-            style={{textAlign: 'center'}}>
+            style={{marginTop: '10px'}}>
         {props.children}
         </div>
     );
