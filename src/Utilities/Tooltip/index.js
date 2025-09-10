@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './style.scss';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
  import * as bootstrap from 'bootstrap';
 window.bootstrap = bootstrap; // Expose bootstrap globally
