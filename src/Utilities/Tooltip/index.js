@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './style.scss';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
  import * as bootstrap from 'bootstrap';
 window.bootstrap = bootstrap; // Expose bootstrap globally
@@ -19,9 +20,7 @@ const Tooltip = (props) => {
         <div data-bs-toggle="tooltip" 
             data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
-            data-bs-title={props.tooltipTitle}
-            className={props.className}
-            style={{marginTop: '10px'}}>
+            data-bs-title={props.tooltipTitle}>
         {props.children}
         </div>
     );
