@@ -3,7 +3,7 @@ import HomeComponent from './components/HomeComponent';
 import About from './components/About';
 import Skills from './components/SkillsTechnologies/Skills';
 import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
+import PortfolioComponent from './components/Porfolio/PortfolioComponent';
 
 // import Work from './component/Work';
 // import Contact from './component/Contact';
@@ -26,7 +26,7 @@ const App = () => {
         <About/>
         <Skills/>
         <Resume/>
-        <Portfolio/>
+        <PortfolioComponent/>
     </div>
   </Fragment>
   );
