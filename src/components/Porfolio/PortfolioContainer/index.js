@@ -38,7 +38,7 @@ const PortfolioContainer = () => {
                     <div className="row row-cols-1 row-cols-md-3 g-4">
                         {group.groupProjects.map((project, projectIdx) => (
                             <div className="col" key={projectIdx}>
-                                <div className="card container m-0 p-0" style={{height: '350px', width: '350px', justifyContent: 'center'}}>
+                                <div className="card container m-0 p-0" style={{height: '300px', width: '300px', justifyContent: 'center'}}>
                                     <div className='projectWrapper container d-flex m-0 p-0'>
                                         <Image 
                                             src={project.imageSrc}
@@ -46,7 +46,7 @@ const PortfolioContainer = () => {
                                             className="image" 
                                         />
                                         <div className="projectDetails container d-flex">
-                                            <div className="projectHeading">
+                                            <div className="projectHeading d-flex">
                                                 <span>{project.projectName}</span>
                                             </div>
                                             <div className="projectExtensions container d-flex">          

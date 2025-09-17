@@ -60,3 +60,19 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.projectHeading{
+  text-align: left;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.projectDescription{
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.projectExtensions{
+  justify-items: center;
+  align-content: center;
+}
