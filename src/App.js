@@ -5,11 +5,9 @@ import Skills from './components/SkillsTechnologies/Skills';
 import Resume from './components/Resume';
 import PortfolioComponent from './components/Porfolio/PortfolioComponent';
 
-// import Work from './component/Work';
 // import Contact from './component/Contact';
 import { Fragment } from "react";
 import Offcanvas from "./Utilities/Offcanvas";
-// import Degree from "./component/Degree";
 import './App.scss';
 import { createPortal } from 'react-dom';
 
