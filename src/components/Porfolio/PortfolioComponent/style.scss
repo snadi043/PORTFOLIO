@@ -1,18 +1,49 @@
-.container {
-  position: relative;
-  width: 50%;
+.card:hover{
+  background-color: #2a2929db;
+}
+
+.card:hover .image{
+  opacity: 0.2;
+}
+
+.container:hover .projectDetails{
+  opacity: 1;
+}
+
+.container:hover .projectHeading{
+  background-color: #149ddd;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.container:hover .projectDescription{
+  color: #FFFFFF;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.container:hover .projectExtensions{
+  justify-content: center;
+  padding: 30px
+}
+
+.container:hover svg:hover{
+  fill: #149ddd
 }
 
 .image {
   opacity: 1;
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
-.middle {
+.projectDetails {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -22,10 +53,3 @@
   -ms-transform: translate(-50%, -50%);
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
