@@ -6,7 +6,7 @@ import SkillMatrix from '../SkillMatrix';
 
 const Skills = () => {
     return (
-        <div className="container-fluid about-page-intro">
+        <div className="container-fluid skills-page-intro">
             <UnderlinedText headerText="Skills & Technologies"/>
                 <Text className="fs-4 text">
                 Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.

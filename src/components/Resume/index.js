@@ -6,8 +6,8 @@ import responsibilities from "./data";
 
 const Resume = () => {
     return (
-        <div>
-            <div className="container-fluid resume-page-intro">
+        <div className="container-fluid resume-page-intro">
+            <div className="resume-introduction">
                 <UnderlinedText headerText="Resume"/>
                 <Text className="fs-4 text">
                     Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
