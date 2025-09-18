@@ -11,7 +11,7 @@ const IconWithText = (props) => {
             fill={"#149ddd"} 
             className={props.className}
             style={props.style}>
-              <path fill-rule="evenodd" d={props.iconPath}/>
+              <path fillRule="evenodd" d={props.iconPath}/>
           </Icon>
           <div className='container-fluid' style={{justifyContent: 'space-evenly', alignItems: 'center'}}>
             <Text className="fs-3">{props.count}</Text>
