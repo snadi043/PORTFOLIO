@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useEffect } from 'react';
+import shufflePortfolioElements from '../../../Utilities/ShuffleElements';
 
 const PortfolioNavTabComponent = (props) => {
+    useEffect(() => {
+        shufflePortfolioElements(props.group);
+    }, [props.group]);
+
     return(
         <>
             <li className="nav-item" role="presentation" key={props.key}>
