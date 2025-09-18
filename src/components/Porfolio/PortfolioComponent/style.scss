@@ -3,8 +3,13 @@
   justify-content: center;
 }
 
+.card{
+  border: none;
+  border-radius: 0;
+}
+
 .card:hover{
-  background-color: #2a2929db;
+  background-color:#3f3f41;
 }
 
 .card:hover .image{
@@ -44,8 +49,19 @@
   display: flex;
   width: 100%;
   height: auto;
-  transition: .5s ease;
   backface-visibility: hidden;
+}
+
+.projectWrapper{
+  overflow: hidden;
+}
+
+.projectWrapper:hover{
+  .image{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.25);
+    overflow: hidden;
+  }
 }
 
 .projectDetails {
@@ -64,6 +80,7 @@
   text-align: left;
   position: relative;
   justify-content: flex-start;
+  width: fit-content;
 }
 
 .projectDescription{

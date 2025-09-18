@@ -43,7 +43,7 @@ const PortfolioContainer = () => {
                                         <Image 
                                             src={project.imageSrc}
                                             alt={project.imageTitle}
-                                            className="image" 
+                                            className="image"
                                         />
                                         <div className="projectDetails container d-flex">
                                             <div className="projectHeading d-flex">
