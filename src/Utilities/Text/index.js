@@ -3,13 +3,13 @@ import React from 'react';
 const Text = (props) => {
     return(
         <div className='container-fluid'>
-            <p
+            <span
                 style={props.style}
                 className={props.className}
                 { ...props}
                 >
                 {props.children}
-            </p>
+            </span>
         </div>
     );
 }
