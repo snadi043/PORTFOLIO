@@ -1,15 +1,16 @@
 import React from 'react';
 
 const Text = (props) => {
+    const mergeStyles = {
+        textAlign: 'justify',
+    }
     return(
-        <div className='container-fluid'>
-            <span
-                style={props.style}
-                className={props.className}
-                { ...props}
-                >
+        <div className='container-fluid'> 
+            <div
+            style={{ ...mergeStyles, ...props.style }}
+            className={props.className}>
                 {props.children}
-            </span>
+        </div>
         </div>
     );
 }

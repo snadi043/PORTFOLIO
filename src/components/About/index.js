@@ -13,7 +13,7 @@ const About = () => {
     <div className="container-fluid about-page">
       <div className="container-fluid about-page-intro">
         <UnderlinedText headerText="About"/>
-        <Text className="fs-4 text">
+        <Text className="fs-4">
           Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
           Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
           Coffee Lover.

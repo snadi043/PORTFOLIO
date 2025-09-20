@@ -4,16 +4,18 @@ import Text from '../Text';
 const UnderlinedText = (props) => {
     return(
         <Text 
-            style={{fontWeight: 'bolder'}}
+            style={{fontWeight: 'bolder', display: 'flex', marginBottom: '50px'}}
             className="fs-1 text">
             {props.headerText}
                 <div 
                     className='container-fluid' 
                     style={{
-                        width: props.headerText ? props.headerText.length * 20: '10px', 
-                        paddingTop: '10px', 
-                        backgroundColor:"#149ddd", 
-                        margin: '0'
+                        backgroundColor: '#149ddd',
+                        marginTop: '65px',
+                        display: 'flex',
+                        width: '50px',
+                        height: '3px',
+                        position: 'absolute',
                     }}>
                 </div>
         </Text>
