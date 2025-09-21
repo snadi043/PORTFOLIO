@@ -31,6 +31,7 @@ const PortfolioContainer = () => {
                         {group.groupProjects.map((project, projectIdx) => (
                             <div className="col" key={projectIdx}>
                                 <PortfolioProjectExtensions
+                                    key={project.projectIdx}
                                     src={project.imageSrc}
                                     alt={project.imageTitle}
                                     projectName={project.projectName}

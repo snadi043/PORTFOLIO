@@ -69,25 +69,25 @@ const portfolioData = [
                 projectDescription: 'This is a design based application - 3.'
             },
             {
-                id:'design_application_1',
+                id:'design_application_4',
                 imageSrc: 'https://media.licdn.com/dms/image/v2/C510BAQEUTMmTFgbu6A/company-logo_200_200/company-logo_200_200/0/1630563635923?e=1760572800&v=beta&t=Mbo_DSA3ECTwzY1NSkOlkgNYJD-ZoTDo7cmWArlyHd4',
-                imageTitle: 'design_1',
-                projectName: 'design_application1',
-                projectDescription: 'This is a design application - 1.'
+                imageTitle: 'design_4',
+                projectName: 'design_application4',
+                projectDescription: 'This is a design application - 4.'
             },
             {
-                id:'design_application_2',
+                id:'design_application_5',
                 imageSrc: 'https://media.licdn.com/dms/image/v2/D4E0BAQExhZUq9XVYwA/company-logo_200_200/company-logo_200_200/0/1695239223935/uottawa_logo?e=1760572800&v=beta&t=CXNIto-xQYZ0zl_PlbGQc6R2U1XdUemQa_q1qH_4PC4',
-                imageTitle: 'design_2',
-                projectName: 'design_application2',
-                projectDescription: 'This is a design based application - 2.'
+                imageTitle: 'design_5',
+                projectName: 'design_application5',
+                projectDescription: 'This is a design based application - 5.'
             },
             {
-                id:'design_application_3',
+                id:'design_application_6',
                 imageSrc: 'https://media.licdn.com/dms/image/v2/D4E0BAQExhZUq9XVYwA/company-logo_200_200/company-logo_200_200/0/1695239223935/uottawa_logo?e=1760572800&v=beta&t=CXNIto-xQYZ0zl_PlbGQc6R2U1XdUemQa_q1qH_4PC4',
-                imageTitle: 'design_3',
-                projectName: 'design_application3',
-                projectDescription: 'This is a design based application - 3.'
+                imageTitle: 'design_6',
+                projectName: 'design_application6',
+                projectDescription: 'This is a design based application - 6.'
             }
         ],
     }
