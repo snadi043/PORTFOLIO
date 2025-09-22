@@ -1,12 +1,16 @@
 import React from 'react';
+
+import Wrapper from '../../../Utilities/Wrapper';
 import UnderlinedText from '../../../Utilities/UnderlinedText';
 import Text from '../../../Utilities/Text';
-import './style.scss';
+
 import SkillMatrix from '../SkillMatrix';
+
+import './style.scss';
 
 const Skills = () => {
     return (
-        <div className="container-fluid skills-page-intro">
+        <Wrapper className="container-fluid skills-page-intro" style={{backgroundColor: '#f4fafd'}}>
             <UnderlinedText headerText="Skills & Technologies"/>
                 <Text className="fs-4 text">
                 Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
@@ -14,7 +18,7 @@ const Skills = () => {
                 Coffee Lover.
                 </Text>
             <SkillMatrix/>
-          </div>
+        </Wrapper>
     );
 };
 

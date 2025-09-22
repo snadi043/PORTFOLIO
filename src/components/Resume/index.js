@@ -1,3 +1,4 @@
+import Wrapper from "../../Utilities/Wrapper";
 import Timeline from "../../Utilities/Timeline";
 import UnderlinedText from '../../Utilities/UnderlinedText';
 import Text from "../../Utilities/Text";
@@ -6,7 +7,7 @@ import responsibilities from "./data";
 
 const Resume = () => {
     return (
-        <div className="container-fluid resume-page-intro">
+        <Wrapper className="container-fluid resume-page-intro" style={{backgroundColor: '#FFFFFF'}}>
             <div className="resume-introduction">
                 <UnderlinedText headerText="Resume"/>
                 <Text className="fs-4 text">
@@ -61,7 +62,7 @@ const Resume = () => {
                     )}
                 />
             </div>
-        </div>
+        </Wrapper>
         );
     }
 export default Resume;

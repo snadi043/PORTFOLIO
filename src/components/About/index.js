@@ -3,6 +3,7 @@ import './style.scss';
 
 import ProfileAnalytics from '../Profile/ProfileAnalytics';
 
+import Wrapper from '../../Utilities/Wrapper';
 import Text from '../../Utilities/Text';
 import UnderlinedText from '../../Utilities/UnderlinedText';
 import Image from '../../Utilities/Image';
@@ -10,7 +11,7 @@ import Image from '../../Utilities/Image';
 
 const About = () => {
     return (
-    <div className="container-fluid about-page">
+      <Wrapper className="container-fluid about-page" style={{backgroundColor: '#FFFFFF'}}>
       <div className="container-fluid about-page-intro">
         <UnderlinedText headerText="About"/>
         <Text className="fs-4">
@@ -47,7 +48,7 @@ const About = () => {
       <div className='container-fluid about-page-analytics' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>
         <ProfileAnalytics/>
       </div>
-    </div>
+      </Wrapper>
     );
 }
 

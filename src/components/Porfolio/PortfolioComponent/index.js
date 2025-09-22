@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Wrapper from '../../../Utilities/Wrapper';
 import UnderlinedText from '../../../Utilities/UnderlinedText';
 import Text from '../../../Utilities/Text';
 
@@ -8,7 +10,7 @@ import './style.scss';
 
 const PortfolioComponent = () => {
     return(
-        <div className="container-fluid portfolio-page-intro">
+        <Wrapper className="container-fluid portfolio-page-intro" style={{backgroundColor: '#f4fafd'}}>
                 <UnderlinedText headerText="Portfolio"/>
                 <Text className="fs-4 text">
                     Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
@@ -16,7 +18,7 @@ const PortfolioComponent = () => {
                     Coffee Lover.
                 </Text>
                 <PortfolioContainer/>
-            </div>
+            </Wrapper>
 
     );
 }
