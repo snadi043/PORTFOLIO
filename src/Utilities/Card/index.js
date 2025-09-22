@@ -1,11 +1,26 @@
 import React from 'react';
-import Image from '../Image';
-import Text from '../Text';
 
+import Wrapper from '../Wrapper';
+// import Image from '../Image';
+// import Text from '../Text';
+
+const cardStyles = {
+    backgroundColor: '#FFFFFF', 
+    boxShadow: 'rgba(0, 0, 0, 0.1) 0px 0px 20px 0px',
+}
 const Card = (props) => {
     return (
-        <div className='container'>
-            <div className="card">
+        <Wrapper 
+            className='container-fluid' 
+            style={{...cardStyles, ...props.styles}}>
+            {props.children}
+        </Wrapper>
+    );
+}
+
+export default Card;
+
+{/* <div className="card">
                 <Image 
                     src={props.src} 
                     alt={props.imageAlt} 
@@ -18,9 +33,4 @@ const Card = (props) => {
                     </Text>
                     {props.children}
                 </div>
-            </div>
-        </div>
-    );
-}
-
-export default Card;
+</div> */}
