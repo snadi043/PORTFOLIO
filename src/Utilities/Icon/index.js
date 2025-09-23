@@ -4,12 +4,12 @@ import Wrapper from '../Wrapper';
 
 const Icon = (props) => {
     return(
-        <Wrapper>
+        <Wrapper style={props.iconWrapperStyles}>
             <svg xmlns="http://www.w3.org/2000/svg" 
-            width={props.width} 
-            height={props.height} 
-            fill={props.fill} 
-            className={props.className}
+            width={props.iconWidth} 
+            height={props.iconHeight} 
+            fill={props.iconFill} 
+            className={props.iconClassName}
             viewBox="0 0 16 16"
             >
             {props.children}

@@ -16,10 +16,10 @@ const NavCanvasControl = (props) => {
                 data-bs-target="#offcanvasWithBothOptions" 
                 aria-controls="offcanvasWithBothOptions">
                     <Icon 
-                        width={30} 
-                        height={30} 
-                        fill="#ffffff" 
-                        className="bi bi-list">
+                        iconWidth={30} 
+                        iconHeight={30} 
+                        iconFill="#ffffff" 
+                        iconClassName="bi bi-list">
                             <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                     </Icon>
             </Button>
