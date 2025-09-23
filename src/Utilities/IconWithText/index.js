@@ -23,8 +23,8 @@ const IconWithText = (props) => {
           </Icon>
         </div>
         <div className='container-fluid'>
-            <Text className="fs-3">{props.count}</Text>
-            <Text className="fs-6">{props.label}</Text>
+            <Text className="fs-1">{props.textTitle}</Text>
+            <Text className="fs-6">{props.textDescription}</Text>
         </div>
       </Wrapper>
   );

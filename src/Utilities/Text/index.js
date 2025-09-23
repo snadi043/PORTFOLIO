@@ -1,17 +1,19 @@
 import React from 'react';
 
+import Wrapper from '../Wrapper';
+
 const Text = (props) => {
     const mergeStyles = {
         textAlign: 'justify',
     }
     return(
-        <div className='container-fluid'> 
+        <Wrapper> 
             <div
-            style={{ ...mergeStyles, ...props.style }}
-            className={props.className}>
-                {props.children}
-        </div>
-        </div>
+                style={{ ...mergeStyles, ...props.style }}
+                className={props.className}>
+                    {props.children}
+            </div>
+        </Wrapper>
     );
 }
 

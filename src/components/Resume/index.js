@@ -1,21 +1,22 @@
 import Wrapper from "../../Utilities/Wrapper";
 import Timeline from "../../Utilities/Timeline";
-import UnderlinedText from '../../Utilities/UnderlinedText';
 import Text from "../../Utilities/Text";
+import PageIntroSection from "../../Utilities/PageIntroSection";
 
 import responsibilities from "./data";
 
+import './style.scss';
+
 const Resume = () => {
     return (
-        <Wrapper className="container-fluid resume-page-intro" style={{backgroundColor: '#FFFFFF'}}>
-            <div className="resume-introduction">
-                <UnderlinedText headerText="Resume"/>
-                <Text className="fs-4 text">
-                    Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
-                    Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
-                    Coffee Lover.
+        <Wrapper className="resume-page">
+              <PageIntroSection introHeading={"Resume"}>
+                <Text className="fs-6">
+                  Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
+                  Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
+                  Coffee Lover.
                 </Text>
-            </div>
+              </PageIntroSection>
             <div className="container-fluid" style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: 'inherit', columnGap: '30px',}}>
                 <Timeline
                     count={2}

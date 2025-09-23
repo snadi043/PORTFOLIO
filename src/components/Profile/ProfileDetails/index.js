@@ -1,11 +1,16 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+
 import ProfilePicture from '../ProfilePicture';
+
 import Text from '../../../Utilities/Text';
 import Icon from '../../../Utilities/Icon';
+import Wrapper from '../../../Utilities/Wrapper';
+
+import './style.scss';
 
 const ProfileDetails = () => {
     return(
-        <Fragment>
+        <Wrapper className="profile-details-main-wrapper">
             <ProfilePicture/>
             <div className="container" style={{display: 'flex', flexWrap: 'wrap', alignContent: 'center', alignItems: 'center'}}>
                 <div className='container'>
@@ -46,7 +51,7 @@ const ProfileDetails = () => {
                     </Icon>
                 </div>
             </div>
-        </Fragment>
+        </Wrapper>
     );
 }
 export default ProfileDetails;

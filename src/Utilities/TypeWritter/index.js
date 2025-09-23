@@ -19,12 +19,12 @@ const TypeWritterComponent = () => {
                 onInit={(typewriter) => {
                     typewriter.typeString('')
                     .callFunction(() => {
-                        console.log('String typed out!');
+                        // console.log('String typed out!');
                 })
                 .pauseFor(1000)
                 .deleteAll()
                 .callFunction(() => {
-                    console.log('All strings were deleted');
+                    // console.log('All strings were deleted');
                 })
                 .start();
                 }}

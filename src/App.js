@@ -1,6 +1,6 @@
 // import { Routes, Route} from "react-router-dom";
 import HomeComponent from './components/HomeComponent';
-import About from './components/About';
+import AboutComponent from './components/About/AboutComponent';
 import Skills from './components/SkillsTechnologies/Skills';
 import Resume from './components/Resume';
 import PortfolioComponent from './components/Porfolio/PortfolioComponent';
@@ -23,7 +23,7 @@ const App = () => {
     </div>
     <div className='container-fluid app-main'>
         <HomeComponent/>
-        <About/>
+        <AboutComponent/>
         <Skills/>
         <Resume/>
         <PortfolioComponent/>
