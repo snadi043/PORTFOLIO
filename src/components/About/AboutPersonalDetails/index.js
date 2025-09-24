@@ -3,6 +3,8 @@ import React from 'react';
 import IconWithText from '../../../Utilities/IconWithText';
 import Wrapper from '../../../Utilities/Wrapper';
 
+import './style.scss';
+
 const personalDetailsData = {
     'Age:': '30',
     'City:': 'Ottawa',
@@ -16,7 +18,7 @@ const personalDetailsData = {
 
 const AboutPersonalDetails = () => {
     return (
-        <Wrapper className='container-fluid md-2 p-2' style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: '10px', columnGap: '50px', marginTop: '20px', fontWeight: 'bold'}}>
+        <Wrapper className="about-page-personal-details-wrapper">
             {Object.entries(personalDetailsData).map(([title, description]) => (
                 <IconWithText
                     key={title} 
@@ -28,7 +30,9 @@ const AboutPersonalDetails = () => {
                     textDescription={description}
                     textTitleClassName={'f-5'}
                     textDescriptionClassName={'f-5'}
-                    />
+                    textWrapperStyle={{display: 'flex', flexDirection: 'row'}}
+
+                />
             ))}
         </Wrapper>
     );

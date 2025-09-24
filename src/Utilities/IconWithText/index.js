@@ -23,9 +23,9 @@ const IconWithText = (props) => {
           <path fillRule="evenodd" d={props.iconPath}/>
         </Icon>
       </div>
-      <Wrapper className='container-fluid' style={{display: 'flex'}}>
-          <Text className={props.textTitleClassName}>{props.textTitle}</Text>
-          <Text className={props.textTitleDescriptions}>{props.textDescription}</Text>
+      <Wrapper className='container-fluid' style={props.textWrapperStyle}>
+          <Text className={props.textTitleClassName} style={{padding: '5px',}}>{props.textTitle}</Text>
+          <Text className={props.textTitleDescriptions} style={{padding: '5px'}}>{props.textDescription}</Text>
       </Wrapper>
     </Wrapper>
   );

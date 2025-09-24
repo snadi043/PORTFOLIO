@@ -23,18 +23,17 @@ const AboutComponent = () => {
       </PageIntroSection>
       <Wrapper className="container-fluid about-page-profile-details">
         <Image
-            src="https://avatars.githubusercontent.com/u/60456049?v=4"
-            alt="about_page_profile_image" 
-            style={{}}
-            height={350}
-            width={350}
-            className=""/>
+          src="https://avatars.githubusercontent.com/u/60456049?v=4"
+          alt="about_page_profile_image" 
+          height={350}
+          width={350}
+        />
         <Wrapper className='about-page-personal-details'>
           <UnderlinedText headerText={"Fullstack & Mobile Developer"}/>
           <Text className="fs-6">
             Looking for new opportunities to leverage my skills and contribute to exciting projects.
           </Text>
-            <AboutPersonalDetails/>
+          <AboutPersonalDetails/>
         </Wrapper>
       </Wrapper>
       <div className='container-fluid about-page-analytics' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>
