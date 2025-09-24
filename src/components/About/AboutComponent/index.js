@@ -34,9 +34,7 @@ const AboutComponent = () => {
           <Text className="fs-6">
             Looking for new opportunities to leverage my skills and contribute to exciting projects.
           </Text>
-          <div className='container-fluid md-2 p-2' style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: '10px', columnGap: '50px', marginTop: '20px', fontWeight: 'bold'}}>
             <AboutPersonalDetails/>
-          </div>
         </Wrapper>
       </Wrapper>
       <div className='container-fluid about-page-analytics' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>

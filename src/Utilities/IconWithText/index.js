@@ -10,23 +10,24 @@ const iconWithTextWrapperStyles = {
   justifyContent: 'space-evenly', 
   alignItems: 'center'
 }
+
 const IconWithText = (props) => {
   return (
-      <Wrapper className='container-fluid' style={iconWithTextWrapperStyles}>
-        <div style={props.iconWrapperStyle}>
-          <Icon
-            iconWidth={props.svgWidth}
-            iconHeight={props.svgHeight} 
-            iconFill={"#149ddd"} 
-            iconClassName={props.className}>
-            <path fillRule="evenodd" d={props.iconPath}/>
-          </Icon>
-        </div>
-        <div className='container-fluid'>
-            <Text className="fs-1">{props.textTitle}</Text>
-            <Text className="fs-6">{props.textDescription}</Text>
-        </div>
+    <Wrapper className='container-fluid' style={iconWithTextWrapperStyles}>
+      <div style={props.iconWrapperStyle}>
+        <Icon
+          iconWidth={props.svgWidth}
+          iconHeight={props.svgHeight} 
+          iconFill={"#149ddd"} 
+          iconClassName={props.className}>
+          <path fillRule="evenodd" d={props.iconPath}/>
+        </Icon>
+      </div>
+      <Wrapper className='container-fluid' style={{display: 'flex'}}>
+          <Text className={props.textTitleClassName}>{props.textTitle}</Text>
+          <Text className={props.textTitleDescriptions}>{props.textDescription}</Text>
       </Wrapper>
+    </Wrapper>
   );
 };
 
