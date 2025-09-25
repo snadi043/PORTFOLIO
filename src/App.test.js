@@ -1,35 +1,17 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-let offcanvasPortal;
-
-beforeEach(() => {
-  offcanvasPortal = document.createElement('div');
-  offcanvasPortal.setAttribute('id', 'offcanvas-portal');
-  document.body.appendChild(offcanvasPortal);
+// Before rendering App, set up the portal root in the document body
+beforeAll(() => {
+  const portalRoot = document.createElement('div');
+  portalRoot.setAttribute('id', 'offcanvas-root');
+  document.body.appendChild(portalRoot);
 });
 
-afterEach(() => {
-  document.body.removeChild(offcanvasPortal);
-});
-
-test('renders the learn react link', () => {
+test('renders "Learn React" in the DOM', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  
+  const learnReactElement = screen.getByText(/learn react/i);
+  expect(learnReactElement).toBeInTheDocument();
 });
-
-// describe('App', () => {
-//   it('renders the learn react link', () => {
-//     const container = document.createElement('div');
-//     container.id = 'offcanvas-portal';
-//     document.body.appendChild(container);
-
-//     const {getByText} = render(<App />, {
-//       container: container
-//     });
-
-//     expect(getByText(/learn ract/i)).toBeInTheDocument();
-//     document.body.removeChild(container);
-//   })
-// })

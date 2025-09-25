@@ -1,4 +1,3 @@
-// import React, {useEffect, useState} from 'react';
 
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/About/AboutComponent';
@@ -17,13 +16,6 @@ import { createPortal } from 'react-dom';
 const OffcanvasPortalElement = document.getElementById('offcanvas-root');
 
 const App = () => {
-  // const [offcanvasPortalElement, setOffcanvasPortalElement] = useState(null);
-
-  // useEffect(() => {
-  //   // This runs only on the client side after the component mounts
-  //   setOffcanvasPortalElement(document.getElementById('offcanvas-portal'));
-  // }, []);
-
   return (
   <Wrapper>
   <div id="offcanvas-portal" style={{display:'none'}}>
