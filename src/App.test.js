@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 
 beforeAll(() => {
@@ -9,10 +9,14 @@ beforeAll(() => {
 
 describe('App', () => {
   it('renders the learn react link', () => {
-    const OffcanvasPortalElement = screen.getById('offcanvas-portal');
+    const OffcanvasPortalElement = document.createElement('div');
+    OffcanvasPortalElement.id = 'offcanvas-portal';
+    document.body.appendChild(OffcanvasPortalElement);
+
     const {getByText} = render(<App/>, {
       container: OffcanvasPortalElement
     });
+
     const linkElement = getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
   })

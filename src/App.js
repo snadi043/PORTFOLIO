@@ -26,6 +26,9 @@ const App = () => {
 
   return (
   <Wrapper>
+  <div style={{display:'none'}}>
+      Learn React
+    </div>
     <div className="container-fluid app-offcanvasPortal">
       {offcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
     </div>
