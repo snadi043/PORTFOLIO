@@ -13,16 +13,16 @@ import './App.scss';
 
 import { createPortal } from 'react-dom';
 
-const OffcanvasPortalElement = document.getElementById('offcanvas-root');
 
 const App = () => {
+  const OffcanvasPortalElement = document.getElementById('offcanvas-root');
   return (
   <Wrapper>
   <div id="offcanvas-portal" style={{display:'none'}}>
       Learn React
   </div>
     <div className="container-fluid app-offcanvasPortal">
-      {createPortal(<Offcanvas/>, OffcanvasPortalElement)}
+      {OffcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
     </div>
     <div className='container-fluid app-main'>
         <HomeComponent/>
