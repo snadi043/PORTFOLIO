@@ -1,23 +1,35 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-// beforeAll(() => {
-//   const offcanvasPortal = document.createElement('div');
-//   offcanvasPortal.id = 'offcanvas-portal';
-//   document.body.appendChild(offcanvasPortal);
-// });
+let offcanvasPortal;
 
-describe('App', () => {
-  it('renders the learn react link', () => {
-    const container = document.createElement('div');
-    container.id = 'offcanvas-portal';
-    document.body.appendChild(container);
+beforeEach(() => {
+  offcanvasPortal = document.createElement('div');
+  offcanvasPortal.setAttribute('id', 'app-offcanvasPortal');
+  document.body.appendChild(offcanvasPortal);
+});
 
-    const {getByText} = render(<App />, {
-      container: container
-    });
+afterEach(() => {
+  document.body.removeChild(offcanvasPortal);
+});
 
-    expect(getByText(/learn ract/i)).toBeInTheDocument();
-    document.body.removeChild(container);
-  })
-})
+test('renders the learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+// describe('App', () => {
+//   it('renders the learn react link', () => {
+//     const container = document.createElement('div');
+//     container.id = 'offcanvas-portal';
+//     document.body.appendChild(container);
+
+//     const {getByText} = render(<App />, {
+//       container: container
+//     });
+
+//     expect(getByText(/learn ract/i)).toBeInTheDocument();
+//     document.body.removeChild(container);
+//   })
+// })
