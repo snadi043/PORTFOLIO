@@ -4,21 +4,6 @@ on:
     branches:
      - development
 jobs:
-  build:
-    runs-on: ['macos-latest']
-    steps:
-      - name: Get the code
-        uses: actions/checkout@v5
-      - name: Install node.
-        uses: actions/setup-node@v4
-        with:
-            node-version: 23
-      - name: Install the dependencies.
-        run: npm install
-      - name: Build the code. 
-        run: npm run build
-      - name: Finish Build job.
-        run: echo "Completed the Build job successfully."
   test:
     runs-on: ['macos-latest']
     steps:
@@ -34,6 +19,26 @@ jobs:
         run: npm test
       - name: Finish Test job.
         run: echo "Completed the Test job successfully."
+  build:
+    runs-on: ['macos-latest']
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v5
+      - name: Install node.
+        uses: actions/setup-node@v4
+        with:
+            node-version: 23
+      - name: Install the dependencies.
+        run: npm install
+      - name: Build the code. 
+        run: npm run build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with: 
+          name: development
+          path: build
+      - name: Finish Build job.
+        run: echo "Completed the Build job successfully."
   deploy:
     needs: [build, test]
     runs-on: ['macos-latest']
@@ -55,6 +60,9 @@ jobs:
       - name: Deploy the application to github pages.
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          artifact_name: development
       - name: Finish Deploy job.
         run: echo "Completed the Deploy job successfully."
 
