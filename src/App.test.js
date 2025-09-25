@@ -5,7 +5,7 @@ let offcanvasPortal;
 
 beforeEach(() => {
   offcanvasPortal = document.createElement('div');
-  offcanvasPortal.setAttribute('id', 'app-offcanvasPortal');
+  offcanvasPortal.setAttribute('id', 'offcanvas-portal');
   document.body.appendChild(offcanvasPortal);
 });
 
