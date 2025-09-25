@@ -1,4 +1,5 @@
-// import { Routes, Route} from "react-router-dom";
+import React, {useEffect, useState} from 'react';
+
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/About/AboutComponent';
 import Skills from './components/SkillsTechnologies/Skills';
@@ -16,10 +17,17 @@ import { createPortal } from 'react-dom';
 const OffcanvasPortalElement = document.getElementById('offcanvas-root');
 
 const App = () => {
+  const [offcanvasPortalElement, setOffcanvasPortalElement] = useState(null);
+
+  useEffect(() => {
+    // This runs only on the client side after the component mounts
+    setOffcanvasPortalElement(document.getElementById('offcanvas-portal'));
+  }, []);
+
   return (
   <Wrapper>
     <div className="container-fluid app-offcanvasPortal">
-      {createPortal(<Offcanvas/>, OffcanvasPortalElement)}
+      {offcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
     </div>
     <div className='container-fluid app-main'>
         <HomeComponent/>
