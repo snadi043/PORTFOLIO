@@ -1,1 +1,4 @@
-{"start": "SKIP_PREFLIGHT_CHECK=true react-scripts start"}
+{
+"start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+"test": "SKIP_PREFLIGHT_CHECK=true react-scripts test"
+}
