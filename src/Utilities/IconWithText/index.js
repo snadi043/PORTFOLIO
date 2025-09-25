@@ -14,7 +14,7 @@ const iconWithTextWrapperStyles = {
 const IconWithText = (props) => {
   return (
     <Wrapper className='container-fluid' style={iconWithTextWrapperStyles}>
-      <div style={props.iconWrapperStyle}>
+      <Wrapper clasName="iconWrapper" style={props.iconWrapperStyle}>
         <Icon
           iconWidth={props.svgWidth}
           iconHeight={props.svgHeight} 
@@ -22,10 +22,10 @@ const IconWithText = (props) => {
           iconClassName={props.className}>
           <path fillRule="evenodd" d={props.iconPath}/>
         </Icon>
-      </div>
-      <Wrapper className='container-fluid' style={props.textWrapperStyle}>
-          <Text className={props.textTitleClassName} style={{padding: '5px',}}>{props.textTitle}</Text>
-          <Text className={props.textTitleDescriptions} style={{padding: '5px'}}>{props.textDescription}</Text>
+      </Wrapper>
+      <Wrapper className='container-fluid textWrapper' style={props.textWrapperStyle}>
+          <Text style={props.textTitleStyles}>{props.textTitle}</Text>
+          <Text style={props.textDescriptionStyles}>{props.textDescription}</Text>
       </Wrapper>
     </Wrapper>
   );

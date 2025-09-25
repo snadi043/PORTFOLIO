@@ -1,8 +1,6 @@
 import React from 'react';
 
 import Wrapper from '../Wrapper';
-// import Image from '../Image';
-// import Text from '../Text';
 
 const cardStyles = {
     backgroundColor: '#FFFFFF', 
@@ -19,18 +17,3 @@ const Card = (props) => {
 }
 
 export default Card;
-
-{/* <div className="card">
-                <Image 
-                    src={props.src} 
-                    alt={props.imageAlt} 
-                    height={props.height} 
-                    width={props.width} 
-                    className={props.className}/>
-                <div className="card-body">
-                    <Text>
-                        {props.text}
-                    </Text>
-                    {props.children}
-                </div>
-</div> */}

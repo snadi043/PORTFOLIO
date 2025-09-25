@@ -28,10 +28,9 @@ const AboutPersonalDetails = () => {
                     iconPath={"M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"} 
                     textTitle={title} 
                     textDescription={description}
-                    textTitleClassName={'f-5'}
-                    textDescriptionClassName={'f-5'}
+                    textTitleStyles={{padding: '5px'}}
+                    textDescriptionStyles={{padding: '5px'}}
                     textWrapperStyle={{display: 'flex', flexDirection: 'row'}}
-
                 />
             ))}
         </Wrapper>
