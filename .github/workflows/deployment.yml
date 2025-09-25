@@ -28,8 +28,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 23
+      - name: Install the dependencies.
+        run: npm install
       - name: Run Tests.
-        run: npm run test
+        run: npm test
       - name: Finish Test job.
         run: echo "Completed the Test job successfully."
   deploy:
@@ -48,6 +50,8 @@ jobs:
         uses: actions/setup-node@v4
         with: 
           node-version: 23
+      - name: Install the dependencies.
+        run: npm install
       - name: Deploy the application to github pages.
         id: deployment
         uses: actions/deploy-pages@v4
