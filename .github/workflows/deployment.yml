@@ -5,7 +5,7 @@ on:
      - development
 jobs:
   build:
-    runs-on: ['macos']
+    runs-on: ['macos-latest']
     steps:
       - name: Get the code
         uses: actions/checkout@v5
@@ -20,7 +20,7 @@ jobs:
       - name: Finish Build job.
         run: echo "Completed the Build job successfully."
   test:
-    runs-on: ['macos']
+    runs-on: ['macos-latest']
     steps:
       - name: Get the code.
         uses: actions/checkout@v5
@@ -34,7 +34,7 @@ jobs:
         run: echo "Completed the Test job successfully."
   deploy:
     needs: [build, test]
-    runs-on: ['macos']
+    runs-on: ['macos-latest']
     permissions: 
       pages: write
       id-token: write
