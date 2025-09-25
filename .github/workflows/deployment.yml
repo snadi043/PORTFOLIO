@@ -1,0 +1,57 @@
+name: 'deployment'
+on:
+  push:
+    branches:
+     - development
+jobs:
+  build:
+    runs-on: ['macos']
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v5
+      - name: Install node.
+        uses: actions/setup-node@v4
+        with:
+            node-version: 23
+      - name: Install the dependencies.
+        run: npm install
+      - name: Build the code. 
+        run: npm run build
+      - name: Finish Build job.
+        run: echo "Completed the Build job successfully."
+  test:
+    runs-on: ['macos']
+    steps:
+      - name: Get the code.
+        uses: actions/checkout@v5
+      - name: Install node.
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - name: Run Tests.
+        run: npm run test
+      - name: Finish Test job.
+        run: echo "Completed the Test job successfully."
+  deploy:
+    needs: [build, test]
+    runs-on: ['macos']
+    permissions: 
+      pages: write
+      id-token: write
+    environment: 
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Get the code.
+        uses: actions/checkout@v5
+      - name: Install node.
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 23
+      - name: Deploy the application to github pages.
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Finish Deploy job.
+        run: echo "Completed the Deploy job successfully."
+
+
