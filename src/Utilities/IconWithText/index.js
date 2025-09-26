@@ -13,8 +13,8 @@ const iconWithTextWrapperStyles = {
 
 const IconWithText = (props) => {
   return (
-    <Wrapper className='container-fluid' style={iconWithTextWrapperStyles}>
-      <Wrapper clasName="iconWrapper" style={props.iconWrapperStyle}>
+    <Wrapper className='container-fluid iconWithText' style={{...iconWithTextWrapperStyles, ...props.additionalStyles}}>
+      <Wrapper className="iconWrapper" style={props.iconWrapperStyle}>
         <Icon
           iconWidth={props.svgWidth}
           iconHeight={props.svgHeight} 

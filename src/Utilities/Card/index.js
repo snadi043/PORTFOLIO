@@ -9,7 +9,7 @@ const cardStyles = {
 const Card = (props) => {
     return (
         <Wrapper 
-            className='container-fluid' 
+            className='container-fluid card' 
             style={{...cardStyles, ...props.styles}}>
             {props.children}
         </Wrapper>
