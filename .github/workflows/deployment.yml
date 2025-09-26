@@ -32,11 +32,19 @@ jobs:
         run: npm install
       - name: Build the code. 
         run: npm run build
-      - name: Upload artifacts
+      - name: Publish the JS filename
+        run: find build/static/js -type f -name "*.js" -print0 | xargs -0 echo "build_job_output=$(cat)" >> "$GITHUB_OUTPUT"
+      - name: Upload artifacts for the build job of the application.
         uses: actions/upload-artifact@v4
         with: 
-          name: development
-          path: build
+          name: portfolio-application-build
+          path: ./build
+          if-no-files-found: warn
+          compression-level: 6
+          overwrite: false
+          include-hiddeb-files: false
+      - name: Verify the uploaded files.
+        run: ls
       - name: Finish Build job.
         run: echo "Completed the Build job successfully."
   deploy:
@@ -57,13 +65,26 @@ jobs:
           node-version: 23
       - name: Install the dependencies.
         run: npm install
+      - name: Download the build job artifacts to use in deployment job.
+        uses: actions/download-artifacts@v4
+        with:
+          name: portfolio-application-build
+          path: ./build
+          if-no-files-found: warn
+          compression-level: 6
+          overwrite: false
+          include-hiddeb-files: false
+      - name: Verify the downloaded artifacts.
+        run: ls
       - name: Deploy the application to github pages.
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          artifact_name: development
+          artifact_name: portfolio-application-build
       - name: Finish Deploy job.
-        run: echo "Completed the Deploy job successfully."
+        run: |
+           echo "Completed the Deploy job successfully."
+           echo "Live URL: ${{ steps.deployment.outputs.hosting-website }}"
 
 
