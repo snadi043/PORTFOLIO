@@ -66,7 +66,7 @@ jobs:
       - name: Install the dependencies.
         run: npm install
       - name: Download the build job artifacts to use in deployment job.
-        uses: actions/download-artifacts@v4
+        uses: actions/download-artifact@v4
         with:
           name: portfolio-application-build
           path: ./build
