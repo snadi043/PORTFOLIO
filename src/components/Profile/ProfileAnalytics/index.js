@@ -23,7 +23,7 @@ const ProfileAnalytics = () => {
         <Wrapper className="container-fluid profileAnalytics" style={{display: 'flex'}}>
             {profileAnalyticsData.map((profileAnalyticsData, index) => 
                 <IconWithText
-                    key={profileAnalyticsData[index]}
+                    key={profileAnalyticsData.textDescription}
                     iconPath={profileAnalyticsData.iconPath}
                     className={profileAnalyticsData.className}
                     svgHeight={'100'}

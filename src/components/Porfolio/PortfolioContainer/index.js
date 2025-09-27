@@ -10,7 +10,7 @@ const PortfolioContainer = () => {
         <ul className="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
             {portfolioData.map((group, groupIdx) => 
                 <PortfolioNavTabComponent
-                    key={groupIdx}
+                    key={group.groupName}
                     groupIdx={groupIdx}
                     group={group}
                     shufflePortfolioElements={shufflePortfolioElements}
@@ -25,7 +25,7 @@ const PortfolioContainer = () => {
                     role="tabpanel"
                     aria-labelledby={`pills-${group.groupName}-tab`}
                     tabIndex="0"
-                    key={groupIdx}
+                    key={group.groupProjects.length}
                 >
                     <div className="row row-cols-1 row-cols-md-3 g-4" id="wrapper">
                         {group.groupProjects.map((project, projectIdx) => (
