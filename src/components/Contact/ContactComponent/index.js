@@ -5,6 +5,7 @@ import Text from '../../../Utilities/Text';
 import PageIntroSection from '../../../Utilities/PageIntroSection';
 
 import ContactDetails from '../ContactDetails';
+import ContactForm from '../ContactForm';
 
 import './style.scss';
 
@@ -18,7 +19,10 @@ const ContactComponent = () => {
             Coffee Lover.
           </Text>
         </PageIntroSection>
-        <ContactDetails/>
+        <Wrapper className="container-fluid" style={{display: 'flex', columnGap:'50px'}}>
+          <ContactDetails/>
+          <ContactForm/>
+        </Wrapper>
       </Wrapper>
     );
 }

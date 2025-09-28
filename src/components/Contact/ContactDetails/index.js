@@ -23,6 +23,7 @@ const ContactDetails = () => {
         <Wrapper style={{padding: '60px 0px'}}>
             <Card>
                 {contactDetailsData.map((data, index) => <IconWithText
+                    key={data.className}
                     iconPath={data.iconPath}
                     textTitle={data.textTitle}
                     className={data.className}
