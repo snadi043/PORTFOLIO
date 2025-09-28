@@ -19,7 +19,7 @@ const PortfolioProjectExtensions = (props) => {
                     </div>
                     <div className="projectExtensions container d-flex">          
                         <Button type="button" className="btn">
-                            <Icon className={"bi bi-zoom-in"} height={36} width={36} fill={"#FFFFFF"}>
+                            <Icon iconClassName={"bi bi-zoom-in"} iconHeight={36} iconWidth={36} iconFill={"#FFFFFF"}>
                                 <svg>
                                     <path fillRule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
                                     <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
@@ -28,7 +28,7 @@ const PortfolioProjectExtensions = (props) => {
                             </Icon>
                         </Button>
                         <Button type="button" className="btn">
-                            <Icon className={"bi bi-link-45deg"} height={36} width={36} fill={"#FFFFFF"}>
+                            <Icon iconClassName={"bi bi-link-45deg"} iconHeight={36} iconWidth={36} iconFill={"#FFFFFF"}>
                                 <svg>
                                     <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
                                     <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>

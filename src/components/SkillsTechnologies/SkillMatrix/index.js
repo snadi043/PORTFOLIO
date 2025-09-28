@@ -1,17 +1,14 @@
 import React from 'react';
+import Wrapper from '../../../Utilities/Wrapper';
 import Progressbar from '../../../Utilities/Progressbar';
+
+import './style.scss';
 
 const SkillMatrix = () => {
     return (
-    <div className='container-fluid md-2 p-2' 
-        style={{ 
-        fontWeight: 'bold'
-        }}>
-        <div className='container-fluid md-2 p-2' style={{}}>
+        <Wrapper className="skill-matrix-details">
             <Progressbar/>
-        </div>
-    </div>
-
+        </Wrapper>
     );
 }
 export default SkillMatrix;

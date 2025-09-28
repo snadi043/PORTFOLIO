@@ -1,8 +1,8 @@
 
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/About/AboutComponent';
-import Skills from './components/SkillsTechnologies/Skills';
-import Resume from './components/Resume';
+import SkillsComponent from './components/SkillsTechnologies/SkillsComponent';
+import ResumeComponent from './components/Resume/ResumeComponent';
 import PortfolioComponent from './components/Porfolio/PortfolioComponent';
 import ContactComponent from './components/Contact/ContactComponent';
 
@@ -27,8 +27,8 @@ const App = () => {
     <div className='container-fluid app-main'>
         <HomeComponent/>
         <AboutComponent/>
-        <Skills/>
-        <Resume/>
+        <SkillsComponent/>
+        <ResumeComponent/>
         <PortfolioComponent/>
         <ContactComponent/>
     </div>

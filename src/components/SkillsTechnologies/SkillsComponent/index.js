@@ -8,7 +8,7 @@ import SkillMatrix from '../SkillMatrix';
 
 import './style.scss';
 
-const Skills = () => {
+const SkillsComponent = () => {
     return (
         <Wrapper className="skills-page">
             <PageIntroSection introHeading={"Skills & Technologies"}>
@@ -23,4 +23,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default SkillsComponent;

@@ -3,13 +3,19 @@ import React, {useEffect } from 'react';
 import Wrapper from '../../../Utilities/Wrapper';
 import shufflePortfolioElements from '../../../Utilities/ShuffleElements';
 
+const portfolioNavtabStyles={
+    padding: '60px 20px',
+    display: 'flex',
+    alignItems: 'center',
+}
+
 const PortfolioNavTabComponent = (props) => {
     useEffect(() => {
         shufflePortfolioElements(props.group);
     }, [props.group]);
 
     return(
-        <Wrapper>
+        <Wrapper style={portfolioNavtabStyles}>
             <li className="nav-item" role="presentation">
                 <button
                     className={`nav-link${props.groupIdx === 0 ? ' active' : ''}`}
