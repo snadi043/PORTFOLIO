@@ -2,3 +2,20 @@
     margin: 0;
     padding: '60px 0px',
 }
+
+.profile-details-text-icon-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center
+}
+
+.profile-details-text{
+    color: #ffffff; 
+    font-size: 30px;
+    font-weight: 600; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    margin-top: 5%,
+}

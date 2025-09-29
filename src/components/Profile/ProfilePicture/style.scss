@@ -1,0 +1,17 @@
+.profile-picture-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #565658a8;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.profile-picture-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
