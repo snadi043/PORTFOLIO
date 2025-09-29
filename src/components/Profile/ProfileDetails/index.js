@@ -9,6 +9,11 @@ import profileSidebarIconData from './data';
 
 import './style.scss';
 
+const iconWrapperStyles = {
+    backgroundColor: '#ffffff', 
+    borderRadius: '50%'
+}
+
 const ProfileDetails = () => {
     return(
         <Wrapper className="profile-details-main-wrapper">
@@ -19,7 +24,9 @@ const ProfileDetails = () => {
                 </div>
                 <div className="container" style={{display: 'flex', justifyContent: 'center', gap: '30px', padding: '30px'}}>
                     {profileSidebarIconData.map((sidebarData, index) => 
-                        <Icon iconWrapperStyles={{backgroundColor: '#ffffff', borderRadius: '50%'}}
+                        <Icon
+                            key={sidebarData.className}
+                            iconWrapperStyles={iconWrapperStyles}
                             iconWidth={30} 
                             iconHeight={30} 
                             iconFill="#0f0f0fe9"

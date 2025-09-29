@@ -1,13 +1,18 @@
 import React from "react";
+
+import Wrapper from "../Wrapper";
+
 import Icon from "../Icon";
 import Text from '../Text';
 
 const NavButton = (props) => {
     return(
-        <div className="container">
+        <Wrapper className="container navbutton-wrapper">
             <nav className="navbar">
-                <div className="container-fluid">
-                    <a className="navbar-brand" style={{display: 'flex'}} href={props.href}>
+                <Wrapper className="container-fluid navbar-data-wrapper">
+                    <a className="navbar-brand" 
+                        style={{display: 'flex'}} 
+                        href={props.href}>
                         <Icon
                             iconWidth={30} 
                             iconHeight={30} 
@@ -25,16 +30,17 @@ const NavButton = (props) => {
                                 textAlign:'center', 
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                alignContent: 'center'
+                                alignContent: 'center',
+                                padding: '5px 20px'
                                 }
                             }
                             >
                             {props.children}
                         </Text>
                     </a>
-                </div>
+                </Wrapper>
             </nav>
-        </div>
+        </Wrapper>
     );
 }
 

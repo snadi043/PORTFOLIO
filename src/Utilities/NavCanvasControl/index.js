@@ -1,12 +1,16 @@
-import React, { Fragment } from 'react';
-import Profile from '../../components/Profile/ProfileDetails';
+import React from 'react';
+
+import ProfileDetails from '../../components/Profile/ProfileDetails';
+
 import Button from '../Button';
 import Icon from '../Icon';
+import Wrapper from '../Wrapper';
+
 import './style.scss';
 
 const NavCanvasControl = (props) => {
     return(
-        <Fragment>
+        <Wrapper>
             <Button
                 className="btn "
                 style={{backgroundColor:'#149ddd', zIndex:'1', position:'fixed', top:'10px', left:'10px'}}
@@ -40,12 +44,12 @@ const NavCanvasControl = (props) => {
                         style={{backgroundColor:'#a8a9b4'}}>
                     </Button>
             </div>
-                <Profile/>
-            <div className="container">
+                <ProfileDetails/>
+            <div className="container profile-details-navtab-wrapper">
                 {props.children}
             </div>
             </div>
-        </Fragment>
+        </Wrapper>
     );
 }
 
