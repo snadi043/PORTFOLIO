@@ -1,1 +1,26 @@
+.textWritterContainer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0;
+    width: max-content;
+}
+.textWritterContainerText{
+    text-align: center;
+    width: max-content;
+}
 
+.typewriter{
+    display: flex;
+}
+
+.typeWritterWrapper{
+    display: flex;
+    font-weight: 600;
+    font-size: 36px;
+    color: #149ddd
+}

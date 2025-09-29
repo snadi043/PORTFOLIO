@@ -1,41 +1,35 @@
 import Typewriter from 'typewriter-effect';
+
+import Wrapper from '../Wrapper';
 import Text from '../Text';
+
 import './style.scss';
 
 const TypeWritterComponent = () => {
     return(
-        <div className='container-fluid' 
-            style={{
-                position: 'absolute',
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center',
-                margin: '425px -325px',
-                }}>
-                <Text style={{textAlign:'end'}}> I am a</Text>
-            <div className='container-fluid align-self-baseline'>
+        <Wrapper className='container-fluid textWritterContainer'>
+            <Text className="textWritterContainerText"> I'm</Text>
+            <div className='container-fluid typeWritterWrapper'>
                 <Typewriter
                 className='typewriter'
                 onInit={(typewriter) => {
                     typewriter.typeString('')
                     .callFunction(() => {
-                        // console.log('String typed out!');
                 })
                 .pauseFor(1000)
                 .deleteAll()
                 .callFunction(() => {
-                    // console.log('All strings were deleted');
                 })
                 .start();
                 }}
                 options={{
-                    strings: ['FULLSTACK SOFTWARE DEVELOPER', 'MOBILE APPLICATION DEVELOPER'],
+                    strings: ['"SOFTWARE DEVELOPER"', '"NATURE PHOTOGRAPHER!!!"', '"COFFEE LOVER..."'],
                     autoStart: true,
                     loop: true,
                     deleteSpeed:75,
                 }}/>
             </div>
-        </div>
+        </Wrapper>
     );
 }
 export default TypeWritterComponent;

@@ -1,30 +1,24 @@
 import React from 'react';
-// import Image from '../../Utilities/Image';
+
+import Wrapper from '../../Utilities/Wrapper';
 import Text from '../../Utilities/Text';
 import TypeWritterComponent from '../../Utilities/TypeWritter';
-// import {Link} from 'react-router-dom';
-// import './style.scss';
+
+import './style.scss';
+
 
 const HomeComponent = () => {
     return (
-        <div className='container-fluid' style={{backgroundImage: 'url(https://avatars.githubusercontent.com/u/60456049?v=4)', 
-                backgroundSize: 'cover',
-                height:'100vh'}}>
-                <Text style={{
-                    position: 'absolute',
-                    color: '#ffffff', 
-                    fontSize: '64px', 
-                    fontFamily: 'Arial, sans-serif',
-                    fontWeight: 'bolder',
-                    textAlign: 'center',
-                    justifyContent: 'center',
-                    margin: '350px 150px',
-                    alignContent: 'center'
-                    }}>
+        <Wrapper className='home-page-main-wrapper'>
+                <Wrapper className="home-page-details-wrapper">
+                    <Text className="container-fluid home-page-title">
                         SAI HARNADH
-                </Text>
-                <TypeWritterComponent />
-        </div>
+                    </Text>
+                    <Wrapper>
+                        <TypeWritterComponent />
+                    </Wrapper>
+                </Wrapper>
+        </Wrapper>
     );
 };
 
