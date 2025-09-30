@@ -5,13 +5,14 @@ import Wrapper from '../../../Utilities/Wrapper';
 
 import './style.scss';
 
+// const website = <Wrapper><a href="https://github.com/snadi043'></a></Wrapper>
 const personalDetailsData = {
     'Age:': '30',
     'City:': 'Ottawa',
     'Phone:': '343-999-2611',
     'Birthday:': '19-12-1995',
     'Degree:': 'Masters',
-    'Website:': 'https://github.com/snadi043',
+    'Website:': (<a href='https://github.com/snadi043/PORTFOLIO'>website</a>),
     'Email:': 'nsharnadh18@gmail.com',
     'Freelance:': 'Available',
 }
