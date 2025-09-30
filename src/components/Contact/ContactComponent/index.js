@@ -14,9 +14,7 @@ const ContactComponent = () => {
       <Wrapper className="contact-page">
         <PageIntroSection introHeading={"Contact"}>
           <Text className="fs-6">
-            Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.
-            Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.
-            Coffee Lover.
+          Below are the details to contact me anytime. Feel free to Email me anytime. Thank you for all your support.
           </Text>
         </PageIntroSection>
         <Wrapper className="container-fluid contact-page-info-wrapper">
