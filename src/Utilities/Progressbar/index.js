@@ -1,59 +1,32 @@
 import Tooltip from "../Tooltip";
 import Text from "../Text";
+import Wrapper from "../Wrapper";
 
 import skills from "./data";
+
+import './style.scss';
 
 const Progressbar = () => {
 
     return (
-        <div className='container-fluid md-2 p-2'
-            style={{
-                display: 'grid', 
-                gridTemplateColumns: 'auto auto', 
-                rowGap: 'inherit',
-                columnGap: '30px' 
-            }}>
+        <Wrapper className='container-fluid md-2 p-2 matrix-details-wrapper'>
             {skills.map((skillGroup) =>
-                <div
-                    key={skillGroup.id}
-                    className='skill-row'
-                    style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'auto auto',
-                        flexDirection:'row',
-                        alignItems: 'center',
-                        width: '100%',
-                        justifyContent: 'space-between'
-                    }}
-                >
-                    {/* Skill Group Name */}
-                    <div style={{display: 'flex', margin: '10px', width: '100%', fontWeight: 'bold', color: '#ffffff'}}>
-                        {skillGroup.skillGroup}
-                    </div>
-                    {/* Skills */}
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'auto auto auto auto',
-                        margin: '10px',
-                        width: '100%',
-                        position: 'relative'
-                    }}>
-                        {skillGroup.skillTitle.map((title, idx) => (
-                            <Tooltip key={idx} tooltipTitle={skillGroup.skillPercentage[idx]}>
-                                <div
-                                    style={{
-                                        backgroundColor: skillGroup.skillBackgroundColor[idx],
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                    }}
-                                >
-                                    <Text style={{marginTop: '15px', textAlign: 'center'}}>{title}</Text>
-                                </div>
-                            </Tooltip>
-                        ))}
-                    </div>
-                </div>
+                <Wrapper
+                    className='skill-row-wrapper'
+                    key={skillGroup.id}>
+                        <Wrapper className="skillgroup-title">
+                            {skillGroup.skillGroupTitle}
+                        </Wrapper>
+                        <Wrapper className="skill-title" style={{gridTemplateColumns: `repeat(${skillGroup.skillTitle.length}, minmax(auto, 1fr))`}}>
+                            {skillGroup.skillTitle.map((title, idx) => (
+                                <Tooltip key={idx} tooltipTitle={skillGroup.skillPercentage[idx]}>
+                                    <Wrapper className="tooltip-data-wrapper" style={{ backgroundColor: skillGroup.skillBackgroundColor[idx] }}>
+                                        <Text className="tooltip-text">{title}</Text>
+                                    </Wrapper>
+                                </Tooltip>
+                            ))}
+                    </Wrapper>
+                </Wrapper>
             )}
             {/* Responsive styles */}
             <style>
@@ -65,7 +38,7 @@ const Progressbar = () => {
                 }
                 `}
             </style>
-        </div>
+        </Wrapper>
     );
 };
 export default Progressbar;

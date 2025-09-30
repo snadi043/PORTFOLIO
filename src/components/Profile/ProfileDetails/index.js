@@ -24,15 +24,16 @@ const ProfileDetails = () => {
                 </div>
                 <div className="container" style={{display: 'flex', justifyContent: 'center', gap: '30px', padding: '30px'}}>
                     {profileSidebarIconData.map((sidebarData, index) => 
-                        <Icon
-                            key={sidebarData.className}
-                            iconWrapperStyles={iconWrapperStyles}
-                            iconWidth={30} 
-                            iconHeight={30} 
-                            iconFill="#0f0f0fe9"
-                            iconClassName={sidebarData.className}>
+                        <a href={sidebarData.href} key={sidebarData.className}>
+                            <Icon
+                                iconWrapperStyles={iconWrapperStyles}
+                                iconWidth={30} 
+                                iconHeight={30} 
+                                iconFill="#0f0f0fe9"
+                                iconClassName={sidebarData.className}>
                                 <path d={sidebarData.path}></path>
-                        </Icon>
+                            </Icon>
+                        </a>
                     )}
                 </div>
             </Wrapper>
