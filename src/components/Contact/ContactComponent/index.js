@@ -19,7 +19,7 @@ const ContactComponent = () => {
             Coffee Lover.
           </Text>
         </PageIntroSection>
-        <Wrapper className="container-fluid" style={{display: 'flex', columnGap:'50px'}}>
+        <Wrapper className="container-fluid contact-page-info-wrapper">
           <ContactDetails/>
           <ContactForm/>
         </Wrapper>

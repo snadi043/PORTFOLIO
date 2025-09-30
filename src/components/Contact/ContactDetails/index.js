@@ -20,7 +20,7 @@ const iconWrapperStyle = {
 
 const ContactDetails = () => {
     return (
-        <Wrapper style={{padding: '60px 0px'}}>
+        <Wrapper className="contact-details-wrapper">
             <Card>
                 {contactDetailsData.map((data, index) => <IconWithText
                     key={data.className}

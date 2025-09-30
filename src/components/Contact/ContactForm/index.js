@@ -3,7 +3,7 @@ import React from 'react';
 import Wrapper from '../../../Utilities/Wrapper';
 import Card from '../../../Utilities/Card';
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    // <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 // import './style.scss';
 

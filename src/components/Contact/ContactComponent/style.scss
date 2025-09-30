@@ -3,3 +3,9 @@
   margin: 0;
   background-color: #FFFFFF;
 }
+
+.contact-page-info-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  column-gap: 50px;
+}
