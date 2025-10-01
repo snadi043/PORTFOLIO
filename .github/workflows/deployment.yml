@@ -32,6 +32,11 @@ jobs:
         run: npm install
       - name: Build the code. 
         run: npm run build
+      - name: Generate unique build ID for each build.
+        id: generate_build_id
+        run: |
+          BUILD_ID="${{github.sha}}-${{github.run_number}}"
+          echo "BUILD_ID=$BUILD_ID" >> GITHUB_OUTPUT
       - name: Publish the JS filename
         run: find build/static/js -type f -name "*.js" -print0 | xargs -0 echo "build_job_output=$(cat)" >> "$GITHUB_OUTPUT"
       - name: Upload artifacts for the build job of the application.
@@ -42,7 +47,7 @@ jobs:
           if-no-files-found: warn
           compression-level: 6
           overwrite: false
-          include-hiddeb-files: false
+          include-hidden-files: false
       - name: Verify the uploaded files.
         run: ls
       - name: Finish Build job.
