@@ -74,7 +74,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: portfolio-application-build
-          path: ./build
+          path: ./
           if-no-files-found: warn
           compression-level: 6
           overwrite: false
