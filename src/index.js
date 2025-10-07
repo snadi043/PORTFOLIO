@@ -1,15 +1,18 @@
 import React, {StrictMode} from 'react'
 import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
-// import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.scss'
 
 ReactDOM.render(
   <StrictMode>
-    {/* <BrowserRouter> */}
+    <BrowserRouter future={{
+    v7_startTransition: true,
+    v7_relativeSplatPath: true,
+  }}>
       <App />
-    {/* </BrowserRouter> */}
+    </BrowserRouter>
   </StrictMode>,
   document.getElementById('root')
 )
