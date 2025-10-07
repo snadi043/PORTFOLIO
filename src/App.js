@@ -1,3 +1,4 @@
+import React from 'react';
 
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/About/AboutComponent';
@@ -15,6 +16,7 @@ import { createPortal } from 'react-dom';
 
 
 const App = () => {
+
   const OffcanvasPortalElement = document.getElementById('offcanvas-root');
   return (
   <Wrapper>

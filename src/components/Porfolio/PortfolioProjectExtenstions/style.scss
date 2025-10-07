@@ -1,0 +1,50 @@
+.portfolioProjectExtensionsWrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    height: 300px; 
+    width: 300px;
+    justify-content: center;
+}
+
+.projectWrapper{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.modalWrapper{
+    // z-index: 1050;
+    position: fixed;
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #000000;
+    align-content: center;
+}
+
+.modalButtonClose{
+    color: red; 
+    background-color: azure; 
+    float: right;
+    position: absolute;
+    right: 10px;
+    top:15px;
+}
+
+.modalContent{
+    background-color: unset;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+}
+
+.modalDialog{
+    text-align: center;
+    background-color: unset;
+}
