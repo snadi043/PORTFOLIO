@@ -12,7 +12,7 @@ const NavCanvasControl = (props) => {
     return(
         <Wrapper>
             <Button
-                className="btn "
+                className="btn"
                 style={{backgroundColor:'#149ddd', zIndex:'1', position:'fixed', top:'10px', left:'10px'}}
                 height={30}
                 width={30}

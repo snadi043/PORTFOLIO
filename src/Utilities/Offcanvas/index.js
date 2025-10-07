@@ -18,7 +18,7 @@ const Offcanvas = () => {
                     {offcanvasNavbuttonData.map((offcanvasData) => 
                         <NavButton
                             key={offcanvasData.title}
-                            href={offcanvasData}
+                            href={offcanvasData.href}
                             path={offcanvasData.path}
                             className={offcanvasData.className}>
                                 {offcanvasData.title}
