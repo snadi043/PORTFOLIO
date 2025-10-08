@@ -32,7 +32,7 @@ const Scroll = () => {
             behavior: 'smooth'
         });
     };
-
+    
     return(
         <Wrapper>
             <Icon 

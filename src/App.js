@@ -15,7 +15,7 @@ import './App.scss';
 
 import { createPortal } from 'react-dom';
 
-import {Link, Element } from 'react-scroll';
+import { Element } from 'react-scroll';
 
 const App = () => {
 
