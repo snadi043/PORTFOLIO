@@ -20,7 +20,8 @@ const Offcanvas = () => {
                             key={offcanvasData.title}
                             href={offcanvasData.href}
                             path={offcanvasData.path}
-                            className={offcanvasData.className}>
+                            className={offcanvasData.className}
+                            to={offcanvasData.to}>
                                 {offcanvasData.title}
                         </NavButton>
                     )}

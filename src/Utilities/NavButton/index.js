@@ -5,14 +5,20 @@ import Wrapper from "../Wrapper";
 import Icon from "../Icon";
 import Text from '../Text';
 
+import { Link } from "react-scroll";
+
 const NavButton = (props) => {
     return(
         <Wrapper className="container navbutton-wrapper">
             <nav className="navbar">
                 <Wrapper className="container-fluid navbar-data-wrapper">
-                    <a className="navbar-brand" 
+                    <Link 
+                        to={props.to}
+                        smooth={true} 
+                        duration={50}
+                        className="navbar-brand" 
                         style={{display: 'flex'}} 
-                        href={props.href}>
+                        >
                         <Icon
                             iconWidth={30} 
                             iconHeight={30} 
@@ -37,7 +43,7 @@ const NavButton = (props) => {
                             >
                             {props.children}
                         </Text>
-                    </a>
+                    </Link>
                 </Wrapper>
             </nav>
         </Wrapper>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 
 import HomeComponent from './components/HomeComponent';
 import AboutComponent from './components/About/AboutComponent';
@@ -9,51 +10,44 @@ import ContactComponent from './components/Contact/ContactComponent';
 
 import Offcanvas from "./Utilities/Offcanvas";
 import Wrapper from './Utilities/Wrapper';
-import Scroll from './Utilities/Scroll';
+import ScrollToTop from './Utilities/ScrollToTop';
 
 import './App.scss';
 
-import { createPortal } from 'react-dom';
 
-import { Element } from 'react-scroll';
 
 const App = () => {
-
   const OffcanvasPortalElement = document.getElementById('offcanvas-root');
   return (
-  <Wrapper>
-  <div id="offcanvas-portal" style={{display:'none'}}>
-      Learn React
-  </div>
-    <div className="container-fluid app-offcanvasPortal">
-      {OffcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
-    </div>
-    <div className='container-fluid app-main'>
-      <Element name="home">
-        <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+    <Wrapper>
+      <div id="offcanvas-portal" style={{display:'none'}}>
+          Learn React
+      </div>
+      <div className="container-fluid app-offcanvasPortal">
+        {OffcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
+      </div>
+      <div className='container-fluid app-main'>
+        <div id="home">
           <HomeComponent/>
-        </section>
-      </Element>
-      <Element name="about">
-        <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+          </div>
+        <div id="about">
           <AboutComponent/>
-        </section>
-      </Element>
-      <Element name="skills">
-        <SkillsComponent/>
-      </Element>
-      <Element name="resume">
-        <ResumeComponent/>
-      </Element>
-      <Element name="portfolio">
-        <PortfolioComponent/>
-      </Element>
-      <Element name="contact">
-        <ContactComponent/>
-      </Element>
-    </div>
-    <Scroll/>
-  </Wrapper>
+        </div>
+        <div id="skills">
+          <SkillsComponent/>
+        </div>
+        <div id="resume">
+          <ResumeComponent/>
+        </div>
+        <div id="portfolio">
+          <PortfolioComponent/>
+        </div>
+        <div id="contact">
+          <ContactComponent/>
+        </div>
+      </div>
+        <ScrollToTop/>
+    </Wrapper>
   );
 }
 
