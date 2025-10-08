@@ -9,11 +9,13 @@ import ContactComponent from './components/Contact/ContactComponent';
 
 import Offcanvas from "./Utilities/Offcanvas";
 import Wrapper from './Utilities/Wrapper';
+import Scroll from './Utilities/Scroll';
 
 import './App.scss';
 
 import { createPortal } from 'react-dom';
 
+import {Link, Element } from 'react-scroll';
 
 const App = () => {
 
@@ -27,13 +29,30 @@ const App = () => {
       {OffcanvasPortalElement && createPortal(<Offcanvas/>, OffcanvasPortalElement)}
     </div>
     <div className='container-fluid app-main'>
-        <HomeComponent/>
-        <AboutComponent/>
+      <Element name="home">
+        <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+          <HomeComponent/>
+        </section>
+      </Element>
+      <Element name="about">
+        <section style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+          <AboutComponent/>
+        </section>
+      </Element>
+      <Element name="skills">
         <SkillsComponent/>
+      </Element>
+      <Element name="resume">
         <ResumeComponent/>
+      </Element>
+      <Element name="portfolio">
         <PortfolioComponent/>
+      </Element>
+      <Element name="contact">
         <ContactComponent/>
+      </Element>
     </div>
+    <Scroll/>
   </Wrapper>
   );
 }

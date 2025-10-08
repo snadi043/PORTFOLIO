@@ -24,6 +24,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.9.3",
     "sass": "^1.49.9",
     "three": "^0.143.0",
     "typewriter-effect": "^2.22.0",
@@ -35,7 +36,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
