@@ -8,11 +8,13 @@ const responsibilities =
                 "Member/Volunteer and Representative for 'LIONS CLUB' blood donation camps."
             ],
             [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-                "Sit necessitatibus adipisci, ad alias, voluptate pariatur officia repellendus.",
-                "Repellat inventore fugit perferendis totam dolor voluptas et corrupti distinctio maxime corporis optio.",  
-                "Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.",
-                "Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.",
+                "Courses: Introduction to Business Management & Marketing Research, Business Decision Models.", 
+                "Appointed as Course assistant and Proctor for two subjects at Telfer School of Management.", 
+                "Responsible in making student teams, marking assignments, exams, group projects and monitoring the experiments in lab, proctoring, clarifying student doubts.", 
+                "Conducted final exams to the students and helped the professors to monitor students and ensuring academic integrity.", 
+                "Personal interaction with non-performing students and worked on providing assistance for their better performance in the subjects.",
+                "Member in uOttawa volunteering services – Conducted campus tours and provided housing to 30 students.", 
+                "Member in uOttawa Makerspace - Worked on 3D printing Machines and their performance in labs.",
             ]
         ],
         work: 
@@ -81,13 +83,15 @@ const responsibilities =
         internship:
         [
             [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
-                "Sit necessitatibus adipisci, ad alias, voluptate pariatur officia repellendus.",
-                "Repellat inventore fugit perferendis totam dolor voluptas et corrupti distinctio maxime corporis optio.",  
-                "Young, Enthusiastic and everyday hustler with Master's Degree in Computer Science and passion for building business applications.",
-                "Harnessing the power of technology to create innovative solutions and drive success by updating and optimizing existing systems.",
+                "Collaborated on B2B/B2C project, enhancing user experience with SCRUM methodology.",
+                "Developed UI/UX designs using Figma, improving user interface and user journey mapping.",
+                "Conducted user research, refining application development strategy and addressing pain points.",
+                "Worked with graphic designers, creating cohesive visual elements for application branding.",
+                "Analyzed user behaviour metrics to inform feature enhancements, leading to marked gains in user retention and satisfaction.",
+                "Fostered a team-oriented environment, promoting knowledge sharing and collaboration to drive project success.",
+                "Led final presentation, securing prize money and submitting Proof of Concept to PREPR.",
             ]
-        ]   
+        ],
     };
 
 export default responsibilities;    

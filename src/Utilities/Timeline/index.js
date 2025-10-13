@@ -19,7 +19,7 @@ const Timeline = (props) => {
                 <h2 className='mb-5'>{timelineHeading}</h2>
                 <ul className="timeline">
                     {[...Array(count)].map((_, index) => (
-                        <li key={index}>
+                        <li key={Math.random(count+1)}>
                             <div className="timeline-item mb-5" style={{display: 'grid', gridTemplateColumns: 'auto auto', rowGap: 'inherit', columnGap: '30px'}}>
                                 <Image 
                                     src={src[index]}
